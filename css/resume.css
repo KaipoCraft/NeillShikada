@@ -1,0 +1,82 @@
+/* Overrides from Master */
+
+.mother {
+	background-color: #CDD5DA;
+}
+
+#icons {
+	background-color: #042B48;
+	color: #CDD5DA;
+}
+
+.name {
+	color: #042B48;
+}
+
+#navopen {
+	border-color: #042B48;
+	background-color: #CDD5DA;
+}
+
+.navigator a {
+	color: #CDD5DA;
+	background-color: #042B48;
+}
+  
+  .navigator .closebtn {
+	color: #042B48;
+  }
+  
+  .closebtn:hover {
+	color: #688091;
+  }
+  
+  #nav-portfolio:hover {
+	background-color:  #688091;
+  }
+  
+  #nav-resume:hover {
+	background-color:  #688091;
+  }
+  
+  #nav-contact:hover {
+	background-color:  #688091;
+  }
+
+/* Resume */
+
+.accordian {
+  width: clamp(30ch, 50%, 60ch);
+}
+
+.accordian-btn {
+  width: 100%;
+  background-color: #042B48;
+  color: #CDD5DA;
+  font-family: 'Noto Serif';
+  font-weight: 400;
+  font-size: 30px;
+  border-style: none;
+  line-height: 50px;
+  margin-bottom: 2px;
+}
+
+.accordian-btn:hover {
+  background-color: #688091;
+  cursor: pointer;
+}
+
+.section-hide {
+  display: none;
+  padding: 0 1em;
+  max-height: 0;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.section-show {
+  display: block;
+  max-height: 100%;
+  opacity: 1;
+  transition: all 1s ease;
+}

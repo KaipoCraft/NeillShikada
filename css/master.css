@@ -1,0 +1,246 @@
+/*Main Layout*/
+
+
+
+.mother {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  background-color: #7C7771;
+}
+
+header {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 0rem;
+  position: relative;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+
+
+/*Navigator*/
+
+
+
+#navopen {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #E0C06D;
+  background-color: #7C7771;
+  display: inline-block;
+  margin-right: 10px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+  #navopen:hover, #navopen:active, #navopen:focus{
+   background-color: #C35C57;
+   cursor: pointer;
+  }
+
+.navigator {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+
+.navigator a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #7C7771;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-weight: 400;
+  background-color: #E0C06D;
+  margin-bottom: 10px;
+  letter-spacing: 6px;
+}
+
+.navigator .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 50px;
+  background: none;
+  color: #E0C06D;
+}
+
+.closebtn:hover {
+  color: #042B48;
+}
+
+#nav-portfolio:hover {
+  background-color:  #042B48;
+}
+
+#nav-resume:hover {
+  background-color:  #042B48;
+}
+
+#nav-contact:hover {
+  background-color:  #042B48;
+}
+
+@media screen and (max-width: 600px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/*Body*/
+
+
+
+h1 {
+  font-family: 'Noto Serif';
+  font-weight: 900;
+  font-size: 30px;
+  color: #F1E0C4;
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+}
+
+h2 {
+  font-family: 'Noto Serif';
+  font-weight: 600;
+  font-size: 20px;
+  color: #042B48;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-family: 'Noto Serif';
+  font-weight: 300;
+  font-size: 20px;
+  font-style: italic;
+  color: #688091;
+  margin: 0;
+  margin-top: 5px;
+}
+
+p {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 20px;
+  color: #F1E0C4;
+  margin: auto;
+  padding: 15px;
+  text-indent: 30px;
+  text-justify: inter-word;
+  text-align: justify;
+}
+
+.name {
+  font-family: 'Noto Serif';
+  font-size: 20px;
+  font-weight: 200;
+  color: #E0C06D;
+  display: inline-block;
+  letter-spacing: 3px;
+  position: absolute;
+  margin: 0 0 0 50px;
+}
+
+.title {
+  font-family: 'Noto Serif';
+  font-size: 40px;
+  font-weight: 900;
+  color: #49423a;
+}
+
+.subtitle {
+  font-family: 'Noto Serif';
+  font-size: 30px;
+  font-weight: 600;
+  color: #49423a;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+}
+
+
+
+.body {
+  font-family: 'Lato';
+  font-size: 28px;
+  font-weight: 300;
+  color: #ede1d2;
+}
+
+
+
+/*Footer*/
+
+
+
+.footer {
+  font-family: 'Lato';
+  font-size: 25px;
+  font-weight: 300;
+  color: #E0C06D;
+  text-decoration: none;
+  padding: 0px 100px 50px 100px;
+}
+
+#icons {
+  background-color: #E0C06D;
+  color: #7C7771;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+  #icons:hover {
+    background-color: #9EBAB6;
+  }
+
+.footer-col {
+  float: left;
+  width: 33.33%
+}
+
+#footer-left {
+  float: left;
+  text-align: left;
+}
+
+#footer-center {
+  text-align: center;
+}
+
+#footer-right {
+  float: right;
+  text-align: right;
+}
+
+#footer-right:hover {
+  color: #042B48;
+}

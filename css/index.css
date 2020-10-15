@@ -1,0 +1,162 @@
+/* Welcome Card */
+
+.welcome-card {
+  height: 225px;
+  width: 360px;
+  display: grid;
+  place-items: center;
+  transition: 2s;
+  font-size: 100px;
+  background-color: inherit;
+  border: none;
+}
+
+.welcome-card:hover {
+  scale: 120%;
+  font-size: 105px;
+  cursor: pointer;
+}
+
+.welcome-card:hover .inner-circle {
+  border-width: 15px;
+}
+
+.welcome-card:hover .outer-circle {
+  border-width: 15px;
+}
+
+.welcome-card:hover #welcome-text {
+  font-size: 50px;
+}
+
+.circle-image {
+  height: 275px;
+  width: 275px;
+  position: absolute;
+  display: inline-block;
+  animation: rotation 8s infinite linear;
+}
+
+  @keyframes rotation {
+    from{transform: rotate(360deg)}
+    to{transform: rotate(0deg)}
+  }
+
+.solid-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #E0C06D;
+  transition: 2s;
+  position: absolute;
+}
+
+#welcome-text {
+  font-style: 'Kosugi';
+  font-size: 72px;
+  color: #7C7771;
+  position: absolute;
+  transition: 1s;
+  writing-mode: vertical-rl;
+}
+
+.tooltip-topright {
+  font-family: 'M Plus Rounded 1c';
+  font-size: 30px;
+  font-weight: 800;
+  visibility: hidden;
+  width: 200px;
+  background-color: #E0C06D;
+  color: #7C7771;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 75%;
+}
+
+.tooltip-bottomleft {
+  font-family: 'lato';
+  font-size: 30px;
+  font-weight: 600;
+  visibility: hidden;
+  width: 200px;
+  color: #E0C06D;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 15%;
+  right: 70%;
+}
+
+  .welcome-card:hover .tooltip-topright {
+   visibility: visible;
+  }
+
+  .welcome-card:hover .tooltip-bottomleft {
+   visibility: visible;
+  }
+
+/* Dropdown */
+
+#dropdown {
+  display: none;
+  position: absolute;
+  background-color: #5D8C86;
+  border: #9EBAB6 3px solid;
+  width: 90%;
+  height: 80%;
+  padding: 10px;
+}
+
+.description {
+  position: relative;
+  width: 24em;
+  border-right: 2px solid rgba(241,225,196,.6);
+  white-space: nowrap;
+  overflow: hidden;  
+  margin: 15px;
+  font-family: 'Noto Serif';
+  font-size: 28px;
+  font-weight: 400;
+  color: #F1E0C4;
+}
+
+/* Typing Animation */
+
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 0.2s 1 normal both,
+             blinkTextCursor 800ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 20em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.close-welcome-card {
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: 400;
+  color: #5D8C86;
+  position: absolute;
+  display: block;
+  background-color: #F1E0C4;
+  padding: 10px;
+  border: solid 3px #9EBAB6;
+  bottom: 0;
+  right: 0%;
+}
+
+  .close-welcome-card:hover {
+    background-color: #9EBAB6;
+    cursor: pointer;
+  }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" type="text/css" href="css/master.css">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=M+PLUS+Rounded+1c:wght@800&family=Nunito:ital,wght@0,300;1,300;1,600;1,700&display=swap">
+<link rel="stylesheet" link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap">
+<script src="master.js"></script>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8"/>
+  <meta name="description" content="Portfolio and Works by the Designer Neill Shikada"></meta>
+  <meta name="author" content="Neill Kaipo Shikada"></meta>
+  <meta name="keywords" content="Design, Designer, Architecture, Painting, Portfolio, Art, Neill Kaipo Shikada, Shikada, Neill"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
+  <title>NKS &#124; A Philly Based Designer</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="icon\icon_16x16.png">
+
+  <meta property="twitter:title" content="The Portfolio of Neill Shikada - a designer with a background in architecture, with skills in painting, VR, model construction, and web development"></meta>
+
+
+</head>
+
+  <body class="mother">
+
+    <header>
+
+      <div id="mynavigator" class="navigator">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <i class="fas fa-times-circle"></i>
+        </a>
+        <a id="nav-portfolio" href="portfolio.html">portfolio</a>
+        <a id="nav-resume" href="resume.html">resume</a>
+        <a id="nav-contact" href="contact.html">contact</a>
+
+      </div>
+
+      <!--element to open the sidenav-->
+      <span id="navopen" onclick="openNav()"></span>
+
+      <a href="index.html">
+        <h1 class="name">neill k. shikada</h1>
+      </a>
+
+    </header>
+
+
+
+
+    <div class="main-contact">
+
+      <div class="left-col">
+        <a class="contactinfo" href="mailto:neillshikada@gmail.com">
+          <i id="socialicon" class="fas fa-envelope">
+            <div class="tooltip">
+              <span class="myTooltip">Email me!</span>
+            </div>
+          </i>
+        </a>
+
+        <a class="contactinfo">
+          <input type="text" value="407-247-7086" id="myNumber">
+          <i id="socialicon" class="fas fa-mobile-alt" onclick="CopyNumber()">
+            <div class="tooltip">
+              <span class="myTooltip" id="copyMessage">Copy to clipboard</span>
+            </div>
+          </i>
+        </a>
+
+      </div>
+
+      <div class="center-col">
+        <h1 id="contact-title">Biography</h1>
+        <p>Hawaiian-born and Florida raised, I am keen to the need to build environmentally.
+          I learned to care for the earth walking along the receding coasts of Florida and exploring the fragile ecosystems of Hawaii.
+          My training in design led me to Penn for a Masters of Architecture, but found it wanting.
+          Now, I'm looking to combine my passion for UX and XR for the advancement of environmentally-focused design.
+        </p>
+      </div>
+
+      <div class="right-col">
+        <img id="profile" src="library/profile.jpg">
+      </div>
+
+    </div>
+
+
+
+    <footer class="footer">
+      <div class="footer-col" id="footer-left">
+        <i id="icons" class="fab fa-instagram"></i>
+        <i id="icons" class="fab fa-linkedin"></i>
+        <i id="icons" class="fab fa-github"></i>
+      </div>
+      <div class="footer-col" id="footer-center"></div>
+      <div class="footer-col" id="footer-right"></div>
+    </footer>
+
+  </body>
+
+</html>
