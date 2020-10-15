@@ -80,3 +80,7 @@
   opacity: 1;
   transition: all 1s ease;
 }
+
+.brief {
+  color: #042B48;
+}
