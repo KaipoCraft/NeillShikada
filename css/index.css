@@ -127,7 +127,11 @@
   color: #F1E0C4;
 }
 
+
+
 /* Typing Animation */
+
+
 
 .anim-typewriter{
   animation: typewriter 2s steps(44) 0.2s 1 normal both,
@@ -135,7 +139,7 @@
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 20em;}
+  to{width: 48em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -159,4 +163,51 @@
   .close-welcome-card:hover {
     background-color: #9EBAB6;
     cursor: pointer;
+  }
+
+
+  /* Skill */
+
+
+
+.dropdown-columns {
+  display: inline-grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 100%;
+  height: 500px;
+}
+
+.skill-box {
+  width: 100%;
+  height: inherit;
+  display: inline-block;
+}
+
+.skill {
+  color: #5D8C86;
+  margin: 0;
+  font-size: 25px;
+  position: relative;
+  background-color: #F1E0C4;
+  text-align: center;
+  margin: auto;
+  border: #9EBAB6 3px solid;
+}
+
+#skill-image {
+  width: 100%;
+  height: inherit;
+  display: none;
+  object-fit: contain;
+  background-color: #9EBAB6;
+  padding-bottom: 3px;
+}
+
+  .skill-box:hover .skill {
+   color: #5D8C86;
+   background-color:#9EBAB6;
+  }
+
+  .skill-box:hover #skill-image {
+    display: inline-block;
   }

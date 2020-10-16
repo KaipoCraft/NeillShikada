@@ -46,21 +46,23 @@
   padding-top: 30px;
   background-color: #5D8C86;
   border: #9EBAB6 3px solid;
+  height: 250px;
 }
 
 .right-col {
   padding-right: 40%;
-  padding-top: 30px;
 }
 
 #profile {
   width: 100%;
+  margin: 0 20%;
+  border: #9EBAB6 3px solid;
 }
 
 
 
-
 /* Phone Tooltip */
+
 
 
 input {
@@ -78,7 +80,7 @@ input {
 
 .tooltip .myTooltip {
   visibility: hidden;
-  width: 100px;
+  width: 150px;
   background-color: #042B48;
   color: #7C7771;
   text-align: center;
