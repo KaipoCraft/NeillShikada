@@ -50,7 +50,7 @@ function CopyNumber() {
   document.execCommand("copy");
 
   var tooltip = document.getElementById("copyMessage");
-  tooltip.innerHTML = "Number copied to clipboard";
+  tooltip.innerHTML = "Copied to clipboard!";
 }
 
 function outFunc() {
