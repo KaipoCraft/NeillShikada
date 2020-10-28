@@ -39,6 +39,7 @@
   #socialicon:hover {
     background-color: #9EBAB6;
     cursor: pointer;
+    scale: 120%;
   }
 
 .center-col {
@@ -80,7 +81,7 @@ input {
 
 .tooltip .myTooltip {
   visibility: hidden;
-  width: 150px;
+  width: 170px;
   background-color: #042B48;
   color: #7C7771;
   text-align: center;

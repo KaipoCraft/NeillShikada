@@ -62,11 +62,11 @@
 }
 
 .tooltip-topright {
-  font-family: 'M Plus Rounded 1c';
+  font-family: 'lato';
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 400;
   visibility: hidden;
-  width: 200px;
+  width: 160px;
   background-color: #E0C06D;
   color: #7C7771;
   text-align: center;
@@ -81,7 +81,7 @@
 .tooltip-bottomleft {
   font-family: 'lato';
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   visibility: hidden;
   width: 200px;
   color: #E0C06D;
@@ -187,6 +187,7 @@
   color: #5D8C86;
   margin: 0;
   font-size: 25px;
+  font-weight: normal;
   position: relative;
   background-color: #F1E0C4;
   text-align: center;

@@ -18,6 +18,10 @@
 	background-color: #CDD5DA;
 }
 
+  #navopen:hover, #navopen:active, #navopen:focus {
+    background-color: #042B48;
+  }
+
 .navigator a {
 	color: #CDD5DA;
 	background-color: #042B48;

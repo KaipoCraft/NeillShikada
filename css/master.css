@@ -22,13 +22,16 @@ header {
   place-items: center;
 }
 
-footer {
-  padding: 2rem;
-  text-align: center;
-  padding-right: 10%;
-  padding-left: 10%;
-}
+  @media only screen and (max-width: 600px) {
 
+    .mother {
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+    }
+  }
 
 
 /*Navigator*/
@@ -49,8 +52,9 @@ footer {
 }
 
   #navopen:hover, #navopen:active, #navopen:focus{
-   background-color: #C35C57;
+   background-color: #E0C06D;
    cursor: pointer;
+   scale: 120%;
   }
 
 .navigator {
@@ -92,19 +96,19 @@ footer {
 }
 
 .closebtn:hover {
-  color: #042B48;
+  color: #ECD9A7;
 }
 
 #nav-portfolio:hover {
-  background-color:  #042B48;
+  background-color:  #ECD9A7;
 }
 
 #nav-resume:hover {
-  background-color:  #042B48;
+  background-color:  #ECD9A7;
 }
 
 #nav-contact:hover {
-  background-color:  #042B48;
+  background-color:  #ECD9A7;
 }
 
 @media screen and (max-width: 600px) {
@@ -186,8 +190,6 @@ p {
   text-transform: lowercase;
 }
 
-
-
 .body {
   font-family: 'Lato';
   font-size: 28px;
@@ -207,7 +209,7 @@ p {
   font-weight: 300;
   color: #E0C06D;
   text-decoration: none;
-  padding: 0px 100px 50px 100px;
+  padding: 0px 100px 80px 100px;
 }
 
 #icons {
@@ -220,8 +222,8 @@ p {
 }
 
   #icons:hover {
-    background-color: #9EBAB6;
     cursor: pointer;
+    scale: 200%;
   }
 
 .footer-col {
@@ -245,4 +247,31 @@ p {
 
 #footer-right:hover {
   color: #042B48;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .footer {
+    padding: 5px;
+
+  }
+
+  #footer-left {
+    float: none;
+    text-align: center;
+  }
+
+  .footer-col {
+    float: none;
+    width: auto;
+  }
+
+  #footer-center {
+    display: none;
+  }
+
+  #footer-right {
+    display: none;
+  }
+
 }
