@@ -40,9 +40,12 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
           <i class="fas fa-times-circle"></i>
         </a>
-        <a id="nav-portfolio" href="portfolio.html">portfolio</a>
-        <a id="nav-resume" href="resume.html">resume</a>
-        <a id="nav-contact" href="contact.html">contact</a>
+
+        <a id="nav-tab" href="artwork.html">artwork</a>
+        <a id="nav-tab" href="architecture.html">architecture</a>
+        <a id="nav-tab" href="resume.html">resume</a>
+        <a id="nav-tab" href="contact.html">contact</a>
+
 
       </div>
 
@@ -56,6 +59,8 @@
     </header>
 
     <div class="main">
+
+      <!--
 
       <button class="welcome-card" onclick="RevealWelcome()">
 
@@ -71,6 +76,72 @@
 
       </button>
 
+      -->
+
+      <div class="index-txt">
+        <h1 class="type anim-typewriter">The website of a procrastinating artist + designer.</h1>
+        <h2>Architectural designer, painter, web developer based in Philadelphia.</h2>
+      </div>
+
+      <div class="slideshow-container">
+    
+        <div class="slide fade" >
+          <img src="library/610/cypress-1.jpg" class="slide-img">
+          <div class="slide-txt">Portrait of a Cypress</div>
+          <div class="date">12 &#124; 20 &#124; 20</div>
+        </div>
+        
+        <div class="slide fade">
+          <img src="library/610/creek.jpg" class="slide-img">
+          <div class="slide-txt">The Headwaters of the Everglades</div>
+          <div class="date">1 &#124; 6 &#124; 21</div>
+        </div>
+        
+        <div class="slide fade">
+          <img src="library/610/basilica.jpg" class="slide-img">
+          <div class="slide-txt">Basilica Palladiana</div>
+          <div class="date">12 &#124; 20 &#124; 20</div>
+        </div>
+
+        <div class="slide fade">
+          <img src="library/610/creek.jpg" class="slide-img">
+          <div class="slide-txt">The Headwaters of the Everglades</div>
+          <div class="date">1 &#124; 6 &#124; 21</div>
+        </div>
+        
+        <div id="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+
+        </div>
+        
+        <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2500); // Change image every 2 seconds
+          }
+
+        </script>
+
+      <!--
       <div id="dropdown">
 
         <div class="description anim-typewriter">
@@ -106,6 +177,7 @@
         </button>
 
       </div>
+    -->
 
     </div>
 
@@ -115,6 +187,7 @@
         <a id="icons" target="_blank" class="fab fa-instagram" href="https://www.instagram.com/kaipocraft/"><a>
         <a id="icons" target="_blank" class="fab fa-linkedin" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
         <a id="icons" target="_blank" class="fab fa-github" href="https://github.com/KaipoCraft"></a>
+        <a id="icons" target="_blank" class="fab fa-deviantart" href="https://www.deviantart.com/kaipocraft"></a>
       </div>
       <div class="footer-col" id="footer-center"></div>
       <div class="footer-col" id="footer-right"></div>
