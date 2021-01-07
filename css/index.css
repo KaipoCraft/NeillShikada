@@ -1,3 +1,9 @@
+/* Master Overrides */
+
+header {
+  height: auto;
+}
+
 /* Welcome Card */
 
 .welcome-card {
@@ -47,7 +53,7 @@
   width: 200px;
   border-radius: 50%;
   display: inline-block;
-  background-color: #E0C06D;
+  background-color: #ECD9A7;
   transition: 2s;
   position: absolute;
 }
@@ -67,7 +73,7 @@
   font-weight: 400;
   visibility: hidden;
   width: 160px;
-  background-color: #E0C06D;
+  background-color: #ECD9A7;
   color: #7C7771;
   text-align: center;
   border-radius: 20px;
@@ -84,7 +90,7 @@
   font-weight: 400;
   visibility: hidden;
   width: 200px;
-  color: #E0C06D;
+  color: #ECD9A7;
   text-align: center;
   border-radius: 20px;
   padding: 5px;
@@ -101,6 +107,126 @@
   .welcome-card:hover .tooltip-bottomleft {
    visibility: visible;
   }
+
+/* Home Page Text */
+
+.index-txt {
+  display: inline-block;
+  margin-left: 150px;
+  top: 33%;
+  position: absolute;
+  width: 50%;
+}
+
+.type {
+  border-right: 2px solid rgba(241,225,196,.6);
+  white-space: nowrap;
+  overflow: hidden;
+  width: inherit;
+}
+
+/* Slideshow */
+
+.slideshow-container {
+  max-width: 450px;
+  min-width: 200px;
+  height: 600px;
+  position: relative;
+  margin-left: auto;
+  width: 50%;
+  right: 3vw;
+  padding: 5px;
+  border-left: solid 2px #ECD9A7;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+.slide-txt {
+  color:  #ECD9A7;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.date {
+  color:  #ECD9A7;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  top: 5%;
+  left: -20px;
+  text-transform: uppercase;
+}
+
+#dot-container {
+  display: grid;
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  margin: auto;
+}
+
+/*
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: #688091;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+*/
+
+.active {
+  background-color: #ECD9A7;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.7s;
+  animation-name: fade;
+  animation-duration: 0.7s;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
+  100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+}
+
+@keyframes fade {
+  0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
+  100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
 
 /* Dropdown */
 
@@ -124,7 +250,7 @@
   font-family: 'Noto Serif';
   font-size: 28px;
   font-weight: 400;
-  color: #F1E0C4;
+  color: #ECD9A7;
 }
 
 
@@ -139,7 +265,7 @@
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 48em;}
+  to{width: 23.5em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}

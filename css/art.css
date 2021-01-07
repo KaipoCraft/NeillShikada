@@ -1,0 +1,57 @@
+header {
+    height: auto;
+  }
+
+/* Art Page Text */
+
+.art-txt {
+    display: inline-block;
+    margin-left: 150px;
+    top: 33%;
+    position: absolute;
+    width: 40%;
+  }
+  
+.title {
+   white-space: nowrap;
+   overflow: hidden;
+ }
+
+ .description {
+     padding-bottom: 30px;
+ }
+  
+ /* image */
+
+ .painting {
+    max-width: 500px;
+    min-width: 200px;
+    height: 600px;
+    position: relative;
+    margin-left: 60%;
+    width: 60%;
+    right: 3vw;
+    padding-left: 20px;
+    border-left: solid 2px #ECD9A7;
+  }
+
+  #painting {
+      width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+  }
+
+  /* button */
+
+  #button {
+      background-color: #ECD9A7;
+      padding: 15px;
+      display: inline-block;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #042B48;
+  }
+
+  #purchase:hover {
+      background-color: #E0C06D;
+  }

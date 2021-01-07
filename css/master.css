@@ -6,7 +6,7 @@
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: #7C7771;
+  background-color: #042B48;
 }
 
 header {
@@ -15,11 +15,11 @@ header {
   padding-top: 40px;
   padding-bottom: 0rem;
   position: relative;
+  height: 100px;
 }
 
 .main {
   display: grid;
-  place-items: center;
 }
 
   @media only screen and (max-width: 600px) {
@@ -43,8 +43,8 @@ header {
   height: 30px;
   border-radius: 50%;
   border-style: solid;
-  border-color: #E0C06D;
-  background-color: #7C7771;
+  border-color: #ECD9A7;
+  background-color: #042B48;
   display: inline-block;
   margin-right: 10px;
   position: absolute;
@@ -52,7 +52,7 @@ header {
 }
 
   #navopen:hover, #navopen:active, #navopen:focus{
-   background-color: #E0C06D;
+   background-color: #ECD9A7;
    cursor: pointer;
    scale: 120%;
   }
@@ -73,14 +73,14 @@ header {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #7C7771;
+  color: #042B48;
   display: block;
   transition: 0.3s;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   font-family: 'Lato';
   font-weight: 400;
-  background-color: #E0C06D;
+  background-color: #ECD9A7;
   margin-bottom: 10px;
   letter-spacing: 6px;
 }
@@ -92,23 +92,15 @@ header {
   font-size: 36px;
   margin-left: 50px;
   background: none;
-  color: #E0C06D;
+  color: #ECD9A7;
 }
 
 .closebtn:hover {
   color: #ECD9A7;
 }
 
-#nav-portfolio:hover {
-  background-color:  #ECD9A7;
-}
-
-#nav-resume:hover {
-  background-color:  #ECD9A7;
-}
-
-#nav-contact:hover {
-  background-color:  #ECD9A7;
+#nav-tab:hover {
+  background-color:  #E0C06D;
 }
 
 @media screen and (max-width: 600px) {
@@ -123,26 +115,24 @@ header {
 
 
 h1 {
-  font-family: 'Noto Serif';
-  font-weight: 900;
-  font-size: 30px;
+  font-family: lora;
+  font-weight: 600;
+  font-size: 25px;
   color: #F1E0C4;
-  text-align: center;
+  text-align: left;
   margin: 0;
   margin-top: 5px;
 }
 
 h2 {
-  font-family: 'Noto Serif';
-  font-weight: 600;
-  font-size: 20px;
-  color: #042B48;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  color:#F1E0C4;
 }
 
 h3 {
-  font-family: 'Noto Serif';
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 20px;
   font-style: italic;
@@ -158,31 +148,24 @@ p {
   color: #F1E0C4;
   margin: auto;
   padding: 15px;
-  text-indent: 30px;
   text-justify: inter-word;
   text-align: justify;
 }
 
 .name {
-  font-family: 'Noto Serif';
+  font-family: 'lora';
   font-size: 20px;
-  font-weight: 200;
-  color: #E0C06D;
+  font-weight: 600;
+  color: #ECD9A7;
   display: inline-block;
   letter-spacing: 3px;
   position: absolute;
   margin: 0 0 0 50px;
 }
 
-.title {
-  font-family: 'Noto Serif';
-  font-size: 40px;
-  font-weight: 900;
-  color: #49423a;
-}
 
 .subtitle {
-  font-family: 'Noto Serif';
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 600;
   color: #49423a;
@@ -207,23 +190,33 @@ p {
   font-family: 'Lato';
   font-size: 25px;
   font-weight: 300;
-  color: #E0C06D;
+  color: #ECD9A7;
   text-decoration: none;
-  padding: 0px 100px 80px 100px;
+  padding: 0px 100px 40px 100px;
 }
 
 #icons {
-  background-color: #E0C06D;
-  color: #7C7771;
+  background-color: #ECD9A7;
+  color: #042B48;
   border-radius: 50%;
   padding: 10px;
   margin-right: 10px;
   text-decoration: none;
+  width: 25px;
+  height: 25px;
+  text-align: center;
 }
 
   #icons:hover {
     cursor: pointer;
-    scale: 200%;
+    animation-name: grow;
+    animation-duration: 0.3s;
+    scale: 160%;
+  }
+
+  @keyframes grow {
+    0% {scale: 100%;}
+    100% {scale: 160%;}
   }
 
 .footer-col {

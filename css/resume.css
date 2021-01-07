@@ -4,6 +4,11 @@
 	background-color: #CDD5DA;
 }
 
+.main {
+	margin-right: auto;
+	margin-left: auto;
+}
+
 #icons {
 	background-color: #042B48;
 	color: #CDD5DA;
@@ -51,6 +56,7 @@
 
 .accordian {
   width: clamp(30ch, 50%, 60ch);
+  margin: auto;
 }
 
 .accordian-btn {
