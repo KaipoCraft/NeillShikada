@@ -2,7 +2,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <link rel="stylesheet" type="text/css" href="css/master.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/about_me.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=M+PLUS+Rounded+1c:wght@800&family=Nunito:ital,wght@0,300;1,300;1,600;1,700&display=swap">
 <link rel="stylesheet" link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap">
@@ -14,7 +14,7 @@
 <head>
 
   <meta charset="utf-8"/>
-  <meta name="description" content="Portfolio and Works by the Designer Neill Kaipo Shikada"></meta>
+  <meta name="description" content="Portfolio and Works by the Designer Neill Shikada"></meta>
   <meta name="author" content="Neill Kaipo Shikada"></meta>
   <meta name="keywords" content="Design, Designer, Architecture, Painting, Portfolio, Art, Neill Kaipo Shikada, Shikada, Neill"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
@@ -22,7 +22,7 @@
   <title>NKS &#124; A Philly Based Designer</title>
   <link rel="icon" type="image/png" sizes="16x16" href="icon\icon_16x16.png">
 
-  <meta property="twitter:title" content="The Portfolio of Neill Kaipo Shikada - a designer with a background in architecture, with skills in painting, VR, model construction, and web development"></meta>
+  <meta property="twitter:title" content="The Portfolio of Neill Shikada - a designer with a background in architecture, with skills in painting, VR, model construction, and web development"></meta>
   <meta property="og:image" content="/library/site-thumbnail.jpg">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1024">
@@ -56,75 +56,53 @@
 
     </header>
 
+
+
+
     <div class="main">
 
-      <div class="index-txt">
+      <div id="text">
+        
+        <h1 class="callout">
+          Neill Kaipo Shikada is a(n) <span id="identifier"></span> based out of West Philadelphia. 
+          He studied architecture, but now is a freelance painter looking to make waves in the UX community.
+        </h1>
+      
+        <p class="body" id="contact-body">
+          A Floridian at heart, he has found a huge admiration for what Northerners call "seasons."
+        </p>
 
-        <h1 class="type anim-typewriter">The website of an independent artist + designer.</h1>
-        <h2>Architectural designer, painter, UX designer somewhere between Philadelphia and Orlando.</h2>
+        <p id="contact">Feel free to email me anytime at 
+
+          <a class="contact-icon" id="email" href="mailto:neillshikada@gmail.com">
+
+            <i id="icon" class="fas fa-envelope-square"></i>
+          
+          </a> 
+
+          or call 
+          
+          <a class="contact-icon" id="phone" href="tel:407-247-7086">
+
+            <i id="icon" class="fas fa-phone-square"></i>
+          
+          </a>
+
+        </p>
+
+        <a id="resume" href="library/shikada_neill_resume.pdf" download="shikada_neill_resume.pdf" target="_blank">
+          see my resume! <i class="fas fa-arrow-alt-circle-down" id="download"></i>
+        </a>
 
       </div>
 
-      <div class="slideshow-container">
-    
-        <div class="slide fade">
-          <img src="library/610/cypress-1.jpg" class="slide-img">
-          <div class="slide-txt">Portrait of a Cypress</div>
-          <div class="date">12 &#124; 20 &#124; 20</div>
-        </div>
-        
-        <div class="slide fade">
-          <img src="library/610/creek.jpg" class="slide-img">
-          <div class="slide-txt">The Headwaters of the Everglades</div>
-          <div class="date">1 &#124; 6 &#124; 21</div>
-        </div>
-        
-        <div class="slide fade">
-          <img src="library/610/basilica.jpg" class="slide-img">
-          <div class="slide-txt">Basilica Palladiana</div>
-          <div class="date">12 &#124; 20 &#124; 20</div>
-        </div>
-
-        <div class="slide fade">
-          <img src="library/610/creek.jpg" class="slide-img">
-          <div class="slide-txt">The Headwaters of the Everglades</div>
-          <div class="date">1 &#124; 6 &#124; 21</div>
-        </div>
-        
-        <div id="dot-container">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-          <span class="dot" onclick="currentSlide(4)"></span> 
-        </div>
-
-        </div>
-        
-        <script>
-          var slideIndex = 0;
-          showSlides();
-          
-          function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("slide");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 2500); // Change image every 2 seconds
-          }
-
-        </script>
+      <img id="profile" src="library/profile.jpg"> 
 
     </div>
 
+
+
+    
     <footer class="footer">
 
       <div class="footer-col" id="footer-left">
