@@ -55,3 +55,42 @@ header {
   #purchase:hover {
       background-color: #E0C06D;
   }
+
+
+  /* Mobile Optimization (side phone) */
+
+  @media only screen and (max-width: 800px) {
+
+    .main {
+        grid-template-columns: auto;
+        margin-top: 50px;
+    }
+
+    .description {
+      margin: 20px;
+      padding: 0px;
+    }
+
+    .slideshow {
+      padding: 0px;
+      border: none;
+    }
+  }
+
+  /* Mobile Optimization (upright phone) */
+
+  @media only screen and (max-width: 600px) {
+
+    .main {
+        grid-template-columns: auto;
+    }
+
+    .description {
+      margin: 20px;
+      padding: 0px;
+    }
+
+    .slideshow {
+      width: auto;
+    }
+  }

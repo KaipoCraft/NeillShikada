@@ -17,21 +17,7 @@ header {
   position: relative;
   height: auto;
 }
-
-.main {
-  display: grid;
-}
-
-  @media only screen and (max-width: 600px) {
-
-    .mother {
-      width: 100%;
-    }
-
-    header {
-      text-align: center;
-    }
-  }
+    
 
 
 /*Navigator*/
@@ -255,7 +241,38 @@ p {
   color: #042B48;
 }
 
+/* Mobile Optimization (side phone) */
 
+@media only screen and (max-width: 800px) {
+
+  .footer {
+    height: 200px;
+    padding: 0px;
+    bottom: 20px;
+    position: relative;
+  }
+
+  #footer-left {
+    float: none;
+    text-align: center;
+    bottom: 40px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .footer-col {
+    float: none;
+    width: auto;
+  }
+
+  #footer-center {
+    display: none;
+  }
+
+  #footer-right {
+    display: none;
+  }
+}
 
 /* Mobile Optimization */
 
@@ -265,14 +282,10 @@ p {
     width: auto;
   }
 
-  .main {
-    display: table;
-  }
-
   header {
     height: 150px;
     padding: 20px 0 0 0;
-    text-align: left;
+    text-align: center;
   }
 
   #navopen {
