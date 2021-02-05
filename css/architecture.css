@@ -204,52 +204,47 @@
     opacity: 1;
 }
 
-/* Overrides from Master */
-/*
-.mother {
-	background-color: #F1E0C4;
-}
 
-#icons {
-	background-color: #C35C57;
-	color: #F1E0C4;
-}
+  /* Mobile Optimization */
 
-.name {
-	color: #C35C57;
-}
+  @media only screen and (max-width: 600px) {
 
-#navopen {
-	border-color: #C35C57;
-	background-color: #F1E0C4;
-}
+    .main {
+        margin: 0px;
+    }
 
-	#navopen:hover, #navopen:active, #navopen:focus {
-    	background-color: #C35C57;
-  	}
+    #pdf-btn {
+        margin-right: auto;
+    }
 
-.navigator a {
-	color: #F1E0C4;
-	background-color: #C35C57;
-}
-  
-  .navigator .closebtn {
-	color: #C35C57;
+    #card-1, #card-2, #card-3, #card-4, #card-5, #card-6, #card-7 {
+      grid-column: 1/5;
+    }
+
+    .overlay {
+      opacity: 1;
+      width: 100%;
+      height: auto;
+      border: none;
+      left: unset;
+      border-top: solid 6px #F7ECDC;
+    }
+
+    .arch-img{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+
+    .desc-stamp {
+        right: 0px;
+        padding: 0px;
+        opacity: 1;
+        border: none;
+        width: 100%;
+    }
+
+    #subtitle {
+        padding: 5px;
+    }
+
   }
-  
-  .closebtn:hover {
-	color: #DB9D9A;
-  }
-  
-  #nav-portfolio:hover {
-	background-color:  #DB9D9A;
-  }
-  
-  #nav-resume:hover {
-	background-color:  #DB9D9A;
-  }
-  
-  #nav-contact:hover {
-	background-color:  #DB9D9A;
-  }
-*/
