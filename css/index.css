@@ -1,6 +1,6 @@
 /* Master Overrides */
 
-
+/* colors #C35C57 #042B48 #251C13 #F1E0C4 */
 
 /* Home Page Text */
 
@@ -43,7 +43,7 @@
   width: 40%;
   right: 3vw;
   padding: 5px;
-  border-left: solid 2px #ECD9A7;
+  border-left: solid 2px #042B48;
 }
 
 .slide {
@@ -60,7 +60,7 @@
 }
 
 .slide-txt {
-  color:  #ECD9A7;
+  color:  #042B48;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
@@ -71,7 +71,7 @@
 }
 
 .date {
-  color:  #ECD9A7;
+  color:  #042B48;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
@@ -91,7 +91,7 @@
 }
 
 .active {
-  background-color: #ECD9A7;
+  background-color: #042B48;
 }
 
 /* Fading animation */
@@ -147,7 +147,7 @@
   font-family: 'Noto Serif';
   font-size: 28px;
   font-weight: 400;
-  color: #ECD9A7;
+  color: #042B48;
 }
 
 
@@ -165,7 +165,7 @@
   to{width: 23.5em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: #ECD9A7;}
+  from{border-right-color: #042B48;}
   to{border-right-color: transparent;}
 }
 
