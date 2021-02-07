@@ -114,7 +114,7 @@ header {
 
 
 h1 {
-  font-family: 'Lato';
+  font-family: 'Roboto Slab';
   font-weight: 600;
   font-size: 25px;
   color: #042B48;
@@ -124,16 +124,16 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lora';
+  font-family: 'Lato';
   font-weight: 300;
-  font-size: 17px;
+  font-size: 15px;
   color:#042B48;
 }
 
 h3 {
-  font-family: 'Lora';
+  font-family: 'Lato';
   font-weight: 300;
-  font-size: 20px;
+  font-size: 15px;
   font-style: italic;
   color: #688091;
   margin: 0;
@@ -143,7 +143,7 @@ h3 {
 p {
   font-family: 'Lato';
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   color: #042B48;
   margin: auto;
   padding: 15px;
@@ -152,7 +152,7 @@ p {
 }
 
 .name {
-  font-family: 'lato';
+  font-family: 'Lato';
   font-size: 20px;
   font-weight: 600;
   color: #042B48;
@@ -164,7 +164,7 @@ p {
 
 
 .subtitle {
-  font-family: 'Lora';
+  font-family: 'Lato';
   font-size: 30px;
   font-weight: 600;
   color: #49423a;

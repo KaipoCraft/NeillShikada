@@ -11,18 +11,62 @@
 
 .description {
     padding-left: 100px;
+    padding-right: 30px;
     margin-top: 90px;
 }
 
 .proj-title {
-    color: #042B48;
     border-bottom: solid 2px #042B48;
 }
 
 .proj-description {
     color: #042B48;
-    padding: 0px;
+    padding: 20px 0px 0px 0px;
 }
+
+
+.page-change_parent {
+  display: block;
+  margin-top: 25px;
+}
+
+  .prev-proj {
+    float: left;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #042B48;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+  }
+
+  .prev-end {
+    color: gray;
+    cursor: auto;
+  }
+
+  .prev-proj:hover {
+    background-color: #F1E0C4;
+  }
+
+  .next-proj {
+    float: right;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #042B48;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+  }
+
+  .next-end {
+    color: gray;
+    cursor: auto;
+  }
+
+  .next-proj:hover {
+    background-color: #F1E0C4;
+  }
 
 
 /* Carousel */
@@ -37,7 +81,7 @@
     width: 100%;
     background-color: #F7ECDC;
     padding: 10px;
-    border: solid 4px #042B48;
+    border: solid 2px #042B48;
 }
 
 .portSlides {
@@ -58,7 +102,8 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #042B48;
+    color: #F7ECDC;
+    -webkit-text-stroke: 0.9px #042B48;
      font-weight: bold;
     font-size: 40px;
     transition: 0.6s ease;
@@ -91,10 +136,12 @@
   
   /* Number text (1/3 etc) */
   .numbertext {
-    font-style: 'lato';
+    font-style: 'Lato';
     color: #F7ECDC;
-    font-size: 16px;
-    padding: 8px 12px;
+    -webkit-text-stroke: 0.9px #042B48;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
     position: absolute;
     top: 0;
   }
@@ -109,8 +156,8 @@
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #042B48;
-    border: #C35C57 3px solid;
+    background-color: #F7ECDC;
+    border: 2px #042B48 solid;
     display: inline-block;
     transition: background-color 0.3s ease;
   }

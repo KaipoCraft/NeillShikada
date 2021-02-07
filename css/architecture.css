@@ -26,11 +26,11 @@
 		grid-column-end: 2;
 	}
 	#card-4 {
-		grid-column-start: 2;
-		grid-column-end: 3;
+		grid-column-start: 1;
+		grid-column-end: 2;
 	}
 	#card-5 {
-		grid-column-start: 3;
+		grid-column-start: 2;
 		grid-column-end: 5;
 	}
 	#card-6 {
@@ -157,7 +157,7 @@
     bottom: -10px;
     left: -10px;
     height: 20%;
-    width: 325px;
+    width: auto;
     opacity: 0;
     transition: .5s ease;
     text-align: center;
@@ -182,7 +182,7 @@
 }
 
 #arch-title {
-    padding-top: 20px;
+    padding: 20px 20px 0px 20px;
     text-align: center;
     margin-top: 0px;
     color: #F7ECDC;
@@ -190,6 +190,7 @@
 }
 
 #subtitle {
+    padding: 0px 20px 0px 20px;
     color: #F7ECDC;
     font-weight: 400;
     font-family: 'Lato', Helvetica, sans-serif;
