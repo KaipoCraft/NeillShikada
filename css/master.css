@@ -146,9 +146,9 @@ p {
   font-size: 15px;
   color: #042B48;
   margin: auto;
-  padding: 15px;
   text-justify: inter-word;
   text-align: justify;
+  display: inline-block;
 }
 
 .name {
@@ -191,7 +191,7 @@ p {
   font-weight: 300;
   color: #042B48;
   text-decoration: none;
-  padding: 0px 100px 40px 100px;
+  padding: 0px 100px 80px 100px;
 }
 
 #icons {

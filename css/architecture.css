@@ -1,3 +1,36 @@
+/* pdf download button */
+
+#pdf-btn {
+    color: #F7ECDC;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    display: inline-block;
+    padding: 10px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: 20%;
+    text-decoration: none;
+    position: relative;
+    background-color: #C35C57;
+    background-attachment: fixed;
+}
+
+#pdf-btn:hover {
+    text-shadow: -1px 1px #251C13;
+    top: -3px;
+    right: -3px;
+}
+
+#pdf-label {
+    color: #F7ECDC;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
 /* body layout */
 
 .main {
@@ -45,47 +78,13 @@
 	.arch-card {
 		position: relative;
 		width: 100%;
-		height: auto;
+		height: 600px;
 		margin: auto;
 	}
-
-/* pdf download button */
-
-#pdf-btn {
-    color: #F7ECDC;
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 50px;
-    display: inline-block;
-    padding: 10px;
-    width: max-content;
-    margin-left: auto;
-    margin-right: 20%;
-    text-decoration: none;
-    position: relative;
-    background-color: #C35C57;
-    background-attachment: fixed;
-}
-
-#pdf-btn:hover {
-    text-shadow: -1px 1px #251C13;
-    top: -3px;
-    right: -3px;
-}
-
-#pdf-label {
-    color: #F7ECDC;
-    font-weight: 600;
-    display: inline-block;
-    position: relative;
-    text-transform: capitalize;
-    font-family: 'Lato', Helvetica, sans-serif;
-}
 
 /* fade in on load */
 
 .arch-card img {
-    margin-top: 25px;
     font-size: 21px;
     text-align: center;
 
@@ -126,8 +125,8 @@
     }
 
 .arch-img {
-    width: 100%;
-    height: 500px;
+    width: inherit;
+    height: inherit;
     margin: auto;
     display: block;
     object-fit: cover;
@@ -137,12 +136,15 @@
 
 .arch-card:hover {
     animation: emphasize;
-    animation-duration: 0.3s;
+    animation-duration: 0.2s;
     scale: 102%;
     cursor: pointer;
 }
 
 .arch-card:hover .arch-img{
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border: solid 5px #C35C57;
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
@@ -159,9 +161,9 @@
     height: 20%;
     width: auto;
     opacity: 0;
-    transition: .5s ease;
+    transition: .3s ease;
     text-align: center;
-    background-color: rgba(195, 92, 87, 0.9);
+    background-color: #C35C57;
     border: solid 6px #F7ECDC;
 }
 
@@ -174,7 +176,7 @@
     opacity: 0;
     transition: .5s ease;
     text-align: center;
-    background-color: rgba(195, 92, 87, 0.9);
+    background-color: #C35C57;
     border: solid 6px #F7ECDC;
     padding: 10px;
     padding-left: 20px;
