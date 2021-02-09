@@ -21,11 +21,12 @@
 
 .proj-description {
     color: #042B48;
-    padding: 20px 0px 0px 0px;
+    padding: 15px 0px 15px 0px;
 }
 
 .proj-emph {
   font-weight: 900;
+  display: block;
 }
 
 /* Navigator Buttons */
@@ -129,9 +130,9 @@
   .caption {
     color: #042B48;
     position: absolute;
-    bottom: -65px;
-    width: 400px;
-    height: 50px;
+    bottom: -30px;
+    width: inherit;
+    height: 20px;
   }
   
   /* Number text (1/3 etc) */
