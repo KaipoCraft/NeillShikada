@@ -65,13 +65,18 @@
 }
 
 .contact-icon {
-  width: 50px;
+  color: #F7ECDC;
+  font-weight: 600;
   display: inline-block;
-  font-size: 40px;
   text-align: center;
-  border: solid 2px #C35C57;
-  border-radius: 20%;
+  text-decoration: none;
+  background-color: #C35C57;
+  padding: 5px;
 }
+
+  .contact-icon:hover {
+    background-color: #042B48;
+  }
 
 .tooltip {
   display: inline-block;
