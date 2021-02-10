@@ -125,9 +125,11 @@ h1 {
 
 h2 {
   font-family: 'Lato';
-  font-weight: 300;
+  font-weight: 600;
   font-size: 15px;
   color:#042B48;
+  text-justify: inter-word;
+  text-align: justify;
 }
 
 h3 {
