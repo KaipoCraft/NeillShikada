@@ -21,11 +21,59 @@ header {
      padding-bottom: 30px;
  }
   
+
+/* Navigator Buttons */
+
+.page-change_parent {
+  display: block;
+  margin-top: 25px;
+}
+
+  .prev-proj {
+    float: left;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #042B48;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+  }
+
+  .prev-end {
+    color: gray;
+    cursor: auto;
+  }
+
+  .prev-proj:hover {
+    background-color: #F1E0C4;
+  }
+
+  .next-proj {
+    float: right;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #042B48;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+  }
+
+  .next-end {
+    color: gray;
+    cursor: auto;
+  }
+
+  .next-proj:hover {
+    background-color: #F1E0C4;
+  }
+
+
+
  /* image */
 
  .painting {
     max-width: 500px;
-    min-width: 200px;
+    min-width: 300px;
     height: 600px;
     position: relative;
     margin-left: 60%;
@@ -66,14 +114,27 @@ header {
         margin-top: 50px;
     }
 
+    .art-txt {
+      margin: 0px;
+      top: 0px;
+      width: 100%;
+      display: block;
+      position: relative;
+    }
+
     .description {
       margin: 20px;
       padding: 0px;
     }
 
-    .slideshow {
+    .painting {
       padding: 0px;
       border: none;
+      display: block;
+      right: 0px;
+      width: 100%;
+      position: relative;
+      margin: 0px;
     }
   }
 

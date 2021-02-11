@@ -285,7 +285,7 @@ p {
   }
 
   header {
-    height: 150px;
+    height: 100px;
     padding: 20px 0 0 0;
     text-align: center;
   }
@@ -294,6 +294,10 @@ p {
     margin: auto;
     position: relative;
     display: block;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   .name {

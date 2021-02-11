@@ -151,3 +151,24 @@
   border-left: solid 2px #042B48;
   float: right;
 }
+
+/* Mobile Optimization */
+
+@media only screen and (max-width: 600px) {
+
+  #text {
+    display: block;
+    position: relative;
+    margin: 0px 0px 75px 0px;
+    width: 100%;
+  }
+  
+  #profile {
+    max-width: 100%;
+    height: auto;
+    border-left: none;
+    float: none;
+    padding: 0px;
+  }
+
+}

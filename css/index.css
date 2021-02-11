@@ -100,20 +100,20 @@
   animation-duration: 0.7s;
 }
 
-@-webkit-keyframes fade {
-  0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
-  100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
-}
+  @-webkit-keyframes fade {
+    0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
+    100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+  }
 
-@keyframes fade {
-  0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
-  100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
-}
+  @keyframes fade {
+    0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
+    100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+  }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
 
 
 
@@ -158,32 +158,13 @@
   animation: typewriter 2s steps(44) 0.2s 1 normal both,
              blinkTextCursor 800ms steps(44) infinite normal;
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 23.5em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: #042B48;}
-  to{border-right-color: transparent;}
-}
-
-.close-welcome-card {
-  font-family: 'Lato';
-  font-size: 20px;
-  font-weight: 400;
-  color: #5D8C86;
-  position: absolute;
-  display: block;
-  background-color: #F1E0C4;
-  padding: 10px;
-  border: solid 3px #9EBAB6;
-  bottom: 0;
-  right: 0%;
-}
-
-  .close-welcome-card:hover {
-    background-color: #9EBAB6;
-    cursor: pointer;
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 23.5em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: #042B48;}
+    to{border-right-color: transparent;}
   }
 
 
@@ -245,6 +226,7 @@
       display: block;
       position: relative;
       width: 100%;
+      top: 0px;
     }
 
     .slideshow-container {
@@ -259,12 +241,19 @@
     .type {
       animation: none;
       white-space: normal;
+      text-align: center;
     }
 
     .slide-txt {
       bottom: -40px;
       text-align: center;
       width: inherit;
+    }
+
+    .date {
+      writing-mode: unset;
+      left: 0px;
+      top: -20px;
     }
 
   }
