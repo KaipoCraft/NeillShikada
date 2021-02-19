@@ -75,10 +75,14 @@ header {
 }
 
 .art-card:hover {
-    animation: emphasize;
-    animation-duration: 0.2s;
     scale: 102%;
     cursor: pointer;
+
+    -webkit-animation: emphasize 0.2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: emphasize 0.2s; /* Firefox < 16 */
+        -ms-animation: emphasize 0.2s; /* Internet Explorer */
+         -o-animation: emphasize 0.2s; /* Opera < 12.1 */
+            animation: emphasize 0.2s;
 }
 
 .art-card:hover .art-img{
@@ -89,10 +93,30 @@ header {
     -webkit-filter: grayscale(0%);
 }
 
-@keyframes emphasize {
-    0% {scale: 100%}
-    100% {scale: 102%;}
-}
+        /* Firefox < 16 */
+        @-moz-keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
+        /* Internet Explorer */
+        @-ms-keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
+        /* Opera < 12.1 */
+        @-o-keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
+        @keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
 
 .overlay {
     position: absolute;

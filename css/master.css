@@ -75,7 +75,7 @@ header {
   transition: 0.3s;
   text-align: left;
   text-transform: uppercase;
-  font-family: 'Lato';
+  font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 400;
   background-color: #F7ECDC;
   border: solid 4px #042B48;
@@ -124,7 +124,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lato';
+  font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 600;
   font-size: 15px;
   color:#042B48;
@@ -133,7 +133,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Lato';
+  font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;
   font-style: italic;
@@ -143,7 +143,7 @@ h3 {
 }
 
 p {
-  font-family: 'Lato';
+  font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #042B48;
@@ -154,7 +154,7 @@ p {
 }
 
 .name {
-  font-family: 'Lato';
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #042B48;
@@ -166,7 +166,7 @@ p {
 
 
 .subtitle {
-  font-family: 'Lato';
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 600;
   color: #49423a;
@@ -175,7 +175,7 @@ p {
 }
 
 .body {
-  font-family: 'Lato';
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 300;
   color: #042B48;
@@ -188,7 +188,7 @@ p {
 
 
 .footer {
-  font-family: 'Lato';
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 300;
   color: #042B48;
@@ -245,7 +245,11 @@ p {
 
 /* Mobile Optimization (side phone) */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+
+  .main {
+    margin-bottom: 50px;
+  }
 
   .footer {
     height: 200px;

@@ -19,19 +19,6 @@
   width: inherit;
 }
 
-/* byline */
-
-#scratch {
-  content: "(coded from scratch)";
-  animation: 'wordSwap' 1s linear infinite alternate;
-}
-
-@keyframes wordSwap {
-  0% {content: "(coded from scratch)";}
-  50% {content: "Yay!";}
-  100% {content: "(coded from scratch)"}
-}
-
 /* Slideshow */
 
 .slideshow-container {
@@ -60,7 +47,7 @@
 .slide-txt {
   color:  #042B48;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   position: absolute;
   bottom: -20px;
   right: 0px;
@@ -71,7 +58,7 @@
 .date {
   color:  #042B48;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   position: absolute;
   text-orientation: mixed;
   writing-mode: vertical-rl;
@@ -94,17 +81,29 @@
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.7s;
-  animation-name: fade;
-  animation-duration: 0.7s;
+  -webkit-animation: 'fade' 0.7s;
+   -moz-animation: 'fade' 0.7s;
+    -ms-animation: 'fade' 0.7s;
+     -o-animation: 'fade' 0.7s;
+        animation: 'fade' 0.7s;
 }
 
   @-webkit-keyframes fade {
     0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
     100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
   }
-
+  @-moz-keyframes fade {
+    0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
+    100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+  }
+  @-ms-keyframes fade {
+    0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
+    100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+  }
+  @-o-keyframes fade {
+    0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
+    100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+  }
   @keyframes fade {
     0% {opacity: 0; margin-left: 5px; margin-top: -5px;} 
     100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
@@ -116,51 +115,54 @@
   }
 
 
-
-
-
-
-
-
-
-/* Dropdown */
-
-#dropdown {
-  display: none;
-  position: absolute;
-  background-color: #5D8C86;
-  border: #9EBAB6 3px solid;
-  width: 90%;
-  height: 80%;
-  padding: 10px;
-}
-
-.description {
-  position: relative;
-  width: 24em;
-  border-right: 2px solid rgba(241,225,196,.6);
-  white-space: nowrap;
-  overflow: hidden;  
-  margin: 15px;
-  font-family: 'Noto Serif';
-  font-size: 28px;
-  font-weight: 400;
-  color: #042B48;
-}
-
-
-
 /* Typing Animation */
 
 
 
 .anim-typewriter{
+  -webkit-animation: 'typewriter' 2s;
+  -moz-animation: 'typewriter' 2s;
+  -ms-animation: 'typewriter' 2s;
+  -o-animation: 'typewriter' 2s;
   animation: typewriter 2s steps(44) 0.2s 1 normal both,
              blinkTextCursor 800ms steps(44) infinite normal;
 }
+  @-webkit-keyframes typewriter {
+    from{width: 0;}
+    to{width: 23.5em;}
+  }
+  @-moz-keyframes typewriter {
+    from{width: 0;}
+    to{width: 23.5em;}
+  }
+  @-ms-keyframes typewriter {
+    from{width: 0;}
+    to{width: 23.5em;}
+  }
+  @-o-keyframes typewriter {
+    from{width: 0;}
+    to{width: 23.5em;}
+  }
   @keyframes typewriter{
     from{width: 0;}
     to{width: 23.5em;}
+  }
+
+  @-webkit-keyframes typewriter {
+    from{border-right-color: #042B48;}
+    to{border-right-color: transparent;}
+  }
+  @-moz-keyframes typewriter {
+    from{border-right-color: #042B48;}
+    to{border-right-color: transparent;}
+  }
+  @-ms-keyframes typewriter {
+    from{border-right-color: #042B48;}
+    to{border-right-color: transparent;}
+  }
+  @-o-keyframes typewriter {
+    from{border-right-color: #042B48;}
+    to{border-right-color: transparent;}
   }
   @keyframes blinkTextCursor{
     from{border-right-color: #042B48;}

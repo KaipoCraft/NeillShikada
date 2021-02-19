@@ -31,33 +31,130 @@
 #identifier::after {
   content: "painter";
   font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
-  animation: 'swap' 10s infinite;
+  font-family: 'Lato', Helvetica, sans-serif;
+
+  -webkit-animation: 'swap' 10s infinite;
+   -moz-animation: 'swap' 10s infinite;
+    -ms-animation: 'swap' 10s infinite;
+     -o-animation: 'swap' 10s infinite;
+        animation: 'swap' 10s infinite;
 }
 
-@keyframes swap {
-  0% {content: "painter"; opacity: 1;}
-  5% {opacity: 0;}
-  10% {opacity: 0;}
-  15% {opacity: 1;}
-  20% {content: "designer"; opacity: 1;}
-  25% {opacity: 0;}
-  30% {opacity: 0;}
-  35% {opacity: 1;}
-  40% {content: "architect"; opacity: 1;}
-  45% {opacity: 0;}
-  50% {opacity: 0;}
-  55% {opacity: 1;}
-  60% {content: "web developer"; opacity: 1;}
-  65% {opacity: 0;}
-  70% {opacity: 0;}
-  75% {opacity: 1;}
-  80% {content: "coder"; opacity: 1;}
-  85% {opacity: 0;}
-  90% {opacity: 0;}
-  95% {opacity: 1;}
-  100% {content: "painter"; opacity: 1;}
-}
+    @-webkit-keyframes swap {
+      0% {content: "painter"; opacity: 1;}
+      5% {opacity: 0;}
+      10% {opacity: 0;}
+      15% {opacity: 1;}
+      20% {content: "designer"; opacity: 1;}
+      25% {opacity: 0;}
+      30% {opacity: 0;}
+      35% {opacity: 1;}
+      40% {content: "architect"; opacity: 1;}
+      45% {opacity: 0;}
+      50% {opacity: 0;}
+      55% {opacity: 1;}
+      60% {content: "web developer"; opacity: 1;}
+      65% {opacity: 0;}
+      70% {opacity: 0;}
+      75% {opacity: 1;}
+      80% {content: "coder"; opacity: 1;}
+      85% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "painter"; opacity: 1;}
+    }
+    @-moz-keyframes swap {
+      0% {content: "painter"; opacity: 1;}
+      5% {opacity: 0;}
+      10% {opacity: 0;}
+      15% {opacity: 1;}
+      20% {content: "designer"; opacity: 1;}
+      25% {opacity: 0;}
+      30% {opacity: 0;}
+      35% {opacity: 1;}
+      40% {content: "architect"; opacity: 1;}
+      45% {opacity: 0;}
+      50% {opacity: 0;}
+      55% {opacity: 1;}
+      60% {content: "web developer"; opacity: 1;}
+      65% {opacity: 0;}
+      70% {opacity: 0;}
+      75% {opacity: 1;}
+      80% {content: "coder"; opacity: 1;}
+      85% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "painter"; opacity: 1;}
+    }
+    @-ms-keyframes swap {
+      0% {content: "painter"; opacity: 1;}
+      5% {opacity: 0;}
+      10% {opacity: 0;}
+      15% {opacity: 1;}
+      20% {content: "designer"; opacity: 1;}
+      25% {opacity: 0;}
+      30% {opacity: 0;}
+      35% {opacity: 1;}
+      40% {content: "architect"; opacity: 1;}
+      45% {opacity: 0;}
+      50% {opacity: 0;}
+      55% {opacity: 1;}
+      60% {content: "web developer"; opacity: 1;}
+      65% {opacity: 0;}
+      70% {opacity: 0;}
+      75% {opacity: 1;}
+      80% {content: "coder"; opacity: 1;}
+      85% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "painter"; opacity: 1;}
+    }
+    @-o-keyframes swap {
+      0% {content: "painter"; opacity: 1;}
+      5% {opacity: 0;}
+      10% {opacity: 0;}
+      15% {opacity: 1;}
+      20% {content: "designer"; opacity: 1;}
+      25% {opacity: 0;}
+      30% {opacity: 0;}
+      35% {opacity: 1;}
+      40% {content: "architect"; opacity: 1;}
+      45% {opacity: 0;}
+      50% {opacity: 0;}
+      55% {opacity: 1;}
+      60% {content: "web developer"; opacity: 1;}
+      65% {opacity: 0;}
+      70% {opacity: 0;}
+      75% {opacity: 1;}
+      80% {content: "coder"; opacity: 1;}
+      85% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "painter"; opacity: 1;}
+    }
+    @keyframes swap {
+      0% {content: "painter"; opacity: 1;}
+      5% {opacity: 0;}
+      10% {opacity: 0;}
+      15% {opacity: 1;}
+      20% {content: "designer"; opacity: 1;}
+      25% {opacity: 0;}
+      30% {opacity: 0;}
+      35% {opacity: 1;}
+      40% {content: "architect"; opacity: 1;}
+      45% {opacity: 0;}
+      50% {opacity: 0;}
+      55% {opacity: 1;}
+      60% {content: "web developer"; opacity: 1;}
+      65% {opacity: 0;}
+      70% {opacity: 0;}
+      75% {opacity: 1;}
+      80% {content: "coder"; opacity: 1;}
+      85% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "painter"; opacity: 1;}
+    }
 
 #contact {
   padding: 0px;
@@ -96,7 +193,7 @@
 #resume {
   text-decoration: none;
   color: #C35C57;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   padding: 15px;
   margin-top: 50px;
   font-size: 20px;
@@ -118,28 +215,37 @@
 }
 
 #resume:hover #download {
-  animation: 'down' 0.5s infinite;
   text-shadow: 2px 2px #F1E0C4;
+
+  -webkit-animation: 'down' 0.5s infinite;
+   -moz-animation: 'down' 0.5s infinite;
+    -ms-animation: 'down' 0.5s infinite;
+     -o-animation: 'down' 0.5s infinite;
+        animation: 'down' 0.5s infinite;
 }
 
-@keyframes down {
-  0% { top: -15px; }
-  100% { top: 15px; }
-}
+    @-webkit-keyframes down {
+      0% { top: -15px; }
+      100% { top: 15px; }
+    }
+    @-moz-keyframes down {
+      0% { top: -15px; }
+      100% { top: 15px; }
+    }
+    @-ms-keyframes down {
+      0% { top: -15px; }
+      100% { top: 15px; }
+    }
+    @-o-keyframes down {
+      0% { top: -15px; }
+      100% { top: 15px; }
+    }
+    @keyframes down {
+      0% { top: -15px; }
+      100% { top: 15px; }
+    }
 
 /* Profile */
-
-/*#profile {
-  max-width: 450px;
-  min-width: 300px;
-  height: 600px;
-  position: relative;
-  margin-left: auto;
-  width: 50%;
-  right: 3vw;
-  padding: 5px;
-  border-left: solid 2px #C35C57;
-}*/
 
 #profile {
   max-width: 500px;

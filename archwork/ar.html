@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" type="text/css" href="../css/master.css">
+<link rel="stylesheet" type="text/css" href="../css/arch.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap">
+<link rel="stylesheet" link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;600&display=swap">
+<script src="../master.js"></script>
+<script src="port.js"></script>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8"/>
+  <meta name="description" content="Portfolio and Works by the Designer Neill Shikada"></meta>
+  <meta name="author" content="Neill Kaipo Shikada"></meta>
+  <meta name="keywords" content="Design, Designer, Architecture, Painting, Portfolio, Art, Neill Kaipo Shikada, Shikada, Neill"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
+  <title>NKS &#124; A Philly Based Designer</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="icon\icon_16x16.png">
+
+  <meta property="twitter:title" content="The Portfolio of Neill Shikada - a designer with a background in architecture, with skills in painting, VR, model construction, and web development"></meta>
+
+
+</head>
+
+  <body class="mother">
+
+    <header>
+  
+      <div id="mynavigator" class="navigator">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <i class="fas fa-times-circle"></i>
+        </a>
+
+        <a id="nav-tab" href="https://neillshikada.com/artwork">artwork</a>
+        <a id="nav-tab" href="https://neillshikada.com/architecture">architecture</a>
+        <a id="nav-tab" href="https://neillshikada.com/about">about me</a>
+
+
+      </div>
+
+      <!--element to open the sidenav-->
+      <span id="navopen" onclick="openNav()" tabindex="0">
+        <i class="fas fa-bars" id="menu-bars"></i>
+      </span>
+
+      <a href="https://neillshikada.com">
+        <h1 class="name">neill kaipo shikada</h1>
+      </a>  
+
+    </header>
+
+
+
+  	<div class="main">
+
+      <div class="description">
+
+        <h1 class="proj-title">AR Overlays</h1>
+        <h2>In collaboration with Daniel Flinchbaugh</h2>
+        <p class="proj-description">
+          Following a series of oil paintings of the dilapidated urban industrial landscape, Daniel and I began collaborating on an augmented reality extension of his work.
+          One day after that discussion, I had these prototypes going.
+          These use Vuforia in the Unity game engine to track key points on the surface to place the overlays in position.
+          I created some speculative work looking at including animated 3D overlays as well.
+        </p>
+
+        <div class="page-change_parent">
+
+          <a class="prev-proj" href="https://neillshikada.com/archwork/museum">
+            <i class="fas fa-long-arrow-alt-left"></i>
+            Previous Project
+          </a>
+
+          <a class="next-proj next-end">
+            Next Project
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+          
+        </div>
+
+      </div>
+
+      <div class="slideshow">
+
+        <div class="portSlides fade" style="display: block;">
+
+          <div class="numbertext">1 / 4</div>
+
+          <img class="imgSlide" src="../library/610a/AR-01.610a.png">
+
+          <div class="caption">
+            <p> Process of creating the overlay
+              <p class="proj-emph">
+                [Vuforia, Oil on Canvas]
+              </p> 
+            </p>
+          </div>
+
+        </div>
+
+        <div class="portSlides fade">
+
+          <div class="numbertext">2 / 4</div>
+
+          <img class="imgSlide" src="../library/610a/AR-02.610a.png">
+
+          <div class="caption">
+            <p> Creating a 3D overlay for an oil painting
+              <p class="proj-emph">
+                [Vuforia, Rhinoceros, Illustrator]
+              </p> 
+            </p>
+          </div>
+
+        </div>
+
+        <div class="portSlides fade">
+
+          <div class="numbertext">3 / 4</div>
+
+          <video class="imgSlide" id="vidSlide" autoplay muted controls loop>
+            <source src="../library/610a/AR-03.610a.mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="caption">
+            <p> Prototype of AR painting overlay
+              <p class="proj-emph">
+                [Vuforia, Unity]
+              </p> 
+            </p>
+          </div>
+
+        </div>
+
+        <div class="portSlides fade">
+
+          <div class="numbertext">4 / 4</div>
+
+          <video class="imgSlide" id="vidSlide" autoplay muted controls loop>
+            <source src="../library/610a/AR-04.610a.mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="caption">
+            <p> Prototype of AR 3D overlay
+              <p class="proj-emph">
+                [Vuforia, Unity]
+              </p> 
+            </p>
+          </div>
+
+        </div>
+
+
+        <a class="prev fas fa-caret-left" onclick="plusSlides(-1)" style="left: 0;"></a>
+        <a class="next fas fa-caret-right" onclick="plusSlides(1)" style="right: 0;"></a>
+
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+
+      </div>
+
+
+  	</div>
+
+
+    <footer class="footer">
+  
+      <div class="footer-col" id="footer-left">
+        <a id="icons" target="_blank" class="fab fa-instagram" href="https://www.instagram.com/kaipocraft/"><a>
+        <a id="icons" target="_blank" class="fab fa-linkedin" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
+        <a id="icons" target="_blank" class="fab fa-github" href="https://github.com/KaipoCraft"></a>
+      </div>
+      
+      <div class="footer-col" id="footer-center"></div>
+      <div class="footer-col" id="footer-right"></div>
+
+    </footer>
+
+  </body>
+
+</html>

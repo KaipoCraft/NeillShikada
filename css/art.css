@@ -6,10 +6,14 @@ header {
 
 .art-txt {
     display: inline-block;
-    margin-left: 150px;
     top: 150px;
     position: absolute;
     width: 40%;
+    padding-left: 10%;
+    padding-right: 30px;
+    min-width: 315px;
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
   
 .title {
@@ -96,7 +100,7 @@ header {
       padding: 15px;
       display: inline-block;
       font-weight: 600;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Lato', Helvetica, sans-serif;
       color: #042B48;
   }
 
@@ -107,7 +111,7 @@ header {
 
   /* Mobile Optimization (side phone) */
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
 
     .main {
         grid-template-columns: auto;
@@ -115,11 +119,11 @@ header {
     }
 
     .art-txt {
-      margin: 0px;
       top: 0px;
-      width: 100%;
+      width: auto;
       display: block;
       position: relative;
+      margin-bottom: 200px;
     }
 
     .description {
@@ -134,7 +138,7 @@ header {
       right: 0px;
       width: 100%;
       position: relative;
-      margin: 0px;
+      margin: auto;
     }
   }
 
