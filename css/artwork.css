@@ -127,22 +127,23 @@ header {
     transition: .3s ease;
     text-align: center;
     background-color: #C35C57;
-    border-top: solid 6px #F7ECDC;
+    border-top: solid 6px #FFFBF5;
 }
 
 #art-title {
     padding-top: 20px;
     text-align: center;
     margin-top: 0px;
-    color: #F7ECDC;
+    color: #FFFBF5;
     font-style: italic;
 }
 
 #subtitle {
-    color: #F7ECDC;
+    color: #FFFBF5;
     font-weight: 400;
     font-family: 'Lato', Helvetica, sans-serif;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .art-card:hover .overlay {

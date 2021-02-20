@@ -6,7 +6,7 @@
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: #F7ECDC;
+  background-color: /*#F7ECDC*/ #FFFBF5;
 }
 
 header {
@@ -77,7 +77,7 @@ header {
   text-transform: uppercase;
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 400;
-  background-color: #F7ECDC;
+  background-color: #FFFBF5;
   border: solid 4px #042B48;
   margin-bottom: 10px;
   letter-spacing: 6px;
@@ -198,7 +198,7 @@ p {
 
 #icons {
   background-color: #042B48;
-  color: #F7ECDC;
+  color: #FFFBF5;
   border-radius: 50%;
   padding: 10px;
   margin-right: 10px;

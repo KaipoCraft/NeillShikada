@@ -86,7 +86,7 @@
     position: relative;
     margin: auto;
     width: 80%;
-    background-color: #F7ECDC;
+    background-color: #FFFBF5;
     padding: 10px;
     border: solid 2px #042B48;
 }
@@ -116,7 +116,7 @@
     width: auto;
     padding: 250px 20px 250px 20px;
     margin: 50px 0px 50px 0px;
-    color: #F7ECDC;
+    color: #FFFBF5;
     -webkit-text-stroke: 1px #042B48;
      font-weight: bold;
     font-size: 40px;
@@ -148,7 +148,7 @@
   /* Number text (1/3 etc) */
   .numbertext {
     font-family: 'Lato', Helvetica, sans-serif;
-    color: #F7ECDC;
+    color: #FFFBF5;
     -webkit-text-stroke: 1px #042B48;
     font-size: 18px;
     font-weight: bold;
@@ -167,7 +167,7 @@
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #F7ECDC;
+    background-color: #FFFBF5;
     border: 2px #042B48 solid;
     display: inline-block;
     transition: background-color 0.3s ease;

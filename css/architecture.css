@@ -1,7 +1,7 @@
 /* pdf download button */
 
 #pdf-btn {
-    color: #F7ECDC;
+    color: #FFFBF5;
     font-family: 'Lato', Helvetica, sans-serif;
     font-weight: 400;
     font-size: 50px;
@@ -23,7 +23,7 @@
 }
 
 #pdf-label {
-    color: #F7ECDC;
+    color: #FFFBF5;
     font-weight: 600;
     display: inline-block;
     position: relative;
@@ -189,7 +189,7 @@
     transition: .3s ease;
     text-align: center;
     background-color: #C35C57;
-    border: solid 6px #F7ECDC;
+    border: solid 6px #FFFBF5;
 }
 
 .desc-stamp {
@@ -202,7 +202,7 @@
     transition: .5s ease;
     text-align: center;
     background-color: #C35C57;
-    border: solid 6px #F7ECDC;
+    border: solid 6px #FFFBF5;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -212,16 +212,17 @@
     padding: 20px 20px 0px 20px;
     text-align: center;
     margin-top: 0px;
-    color: #F7ECDC;
+    color: #FFFBF5;
     font-style: italic;
 }
 
 #subtitle {
     padding: 0px 20px 0px 20px;
-    color: #F7ECDC;
+    color: #FFFBF5;
     font-weight: 400;
     font-family: 'Lato', Helvetica, sans-serif;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .arch-card:hover .overlay {
@@ -255,7 +256,7 @@
       height: auto;
       border: none;
       left: unset;
-      border-top: solid 6px #F7ECDC;
+      border-top: solid 6px #FFFBF5;
     }
 
     .arch-img{
