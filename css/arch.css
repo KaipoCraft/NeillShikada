@@ -6,22 +6,25 @@
     width: 100%;
 }
 
-/* Description Text */
+/* arch-txt Text */
 
 
-.description {
-    padding-left: 10%;
-    padding-right: 30px;
-    margin-top: 90px;
+.arch-txt {
+    position: relative;
+    max-width: 350px;
     min-width: 315px;
+    height: auto;
+    left: 20%;
+    top: 60px;
+    width: 40%;
 }
 
 .proj-title {
-    border-bottom: solid 2px #042B48;
+  color: #003171;
 }
 
-.proj-description {
-    color: #042B48;
+.description {
+    color: #4D8FAC;
     padding: 15px 0px 15px 0px;
 }
 
@@ -35,44 +38,69 @@
 .page-change_parent {
   display: block;
   margin-top: 25px;
+  height: 25px;
 }
 
   .prev-proj {
-    float: left;
     font-family: 'Lato', Helvetica, sans-serif;
     font-weight: 600;
     font-size: 15px;
-    color: #042B48;
-    padding: 10px 20px 10px 20px;
-    cursor: pointer;
+    color: #4D8FAC;
+    
+      padding: 5px;
+      border-radius: 6px;
+      float: left;
+      cursor: pointer;
+      text-decoration: none;
   }
 
   .prev-end {
-    color: gray;
-    cursor: auto;
-  }
-
-  .prev-proj:hover {
-    background-color: #F1E0C4;
-  }
-
-  .next-proj {
-    float: right;
     font-family: 'Lato', Helvetica, sans-serif;
     font-weight: 600;
     font-size: 15px;
-    color: #042B48;
-    padding: 10px 20px 10px 20px;
-    cursor: pointer;
+    color: #C6C2B6;
+    
+      padding: 5px;
+      border-radius: 6px;
+      float: left;
+      cursor: auto;
+      text-decoration: none;
+  }
+
+  .prev-proj:hover {
+    background-color: #C35C57;
+    color: #FFFBF5;
+  }
+
+  .next-proj {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #4D8FAC;
+    
+      padding: 5px;
+      border-radius: 6px;
+      float: right;
+      cursor: pointer;
+      text-decoration: none;
   }
 
   .next-end {
-    color: gray;
-    cursor: auto;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #C6C2B6;
+    
+      padding: 5px;
+      border-radius: 6px;
+      float: right;
+      cursor: auto;
+      text-decoration: none;
   }
 
   .next-proj:hover {
-    background-color: #F1E0C4;
+    background-color: #C35C57;
+    color: #FFFBF5;
   }
 
 
@@ -88,7 +116,6 @@
     width: 80%;
     background-color: #FFFBF5;
     padding: 10px;
-    border: solid 2px #042B48;
 }
 
 .portSlides {
@@ -117,7 +144,7 @@
     padding: 250px 20px 250px 20px;
     margin: 50px 0px 50px 0px;
     color: #FFFBF5;
-    -webkit-text-stroke: 1px #042B48;
+    -webkit-text-stroke: 1px #003171;
      font-weight: bold;
     font-size: 40px;
     transition: 0.6s ease;
@@ -130,7 +157,7 @@
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a red background color */
 .prev:hover, .next:hover {
     color: #C35C57;
   }
@@ -138,7 +165,7 @@
   /* Caption text */
   .caption {
     font-family: 'Lato', Helvetica, sans-serif;
-    color: #042B48;
+    color: #003171;
     position: absolute;
     bottom: -30px;
     width: inherit;
@@ -149,7 +176,7 @@
   .numbertext {
     font-family: 'Lato', Helvetica, sans-serif;
     color: #FFFBF5;
-    -webkit-text-stroke: 1px #042B48;
+    -webkit-text-stroke: 1px #003171;
     font-size: 18px;
     font-weight: bold;
     padding: 5px 5px 5px 5px;
@@ -168,13 +195,13 @@
     width: 15px;
     margin: 0 2px;
     background-color: #FFFBF5;
-    border: 2px #042B48 solid;
+    border: 2px #003171 solid;
     display: inline-block;
     transition: background-color 0.3s ease;
   }
   
   .active, .dot:hover {
-    background-color: #C35C57;
+    background-color: #FFB95A;
   }
   
   /* Fading animation */
@@ -210,11 +237,19 @@
 
   /* Mobile Optimization (side phone) */
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1050px) {
 
     .main {
         grid-template-columns: auto;
         margin-top: 50px;
+    }
+
+    .arch-txt {
+      top: 0px;
+      width: auto;
+      display: block;
+      position: relative;
+      margin-bottom: 200px;
     }
 
     .description {
@@ -237,12 +272,18 @@
         grid-template-columns: auto;
     }
 
+    .arch-txt {
+      left: auto;
+      margin: auto auto 100px auto;
+    }
+
     .description {
       margin: 20px;
       padding: 0px;
     }
 
     .slideshow {
-      width: auto;
+      width: 100%;
+      margin-bottom: 75px;
     }
   }

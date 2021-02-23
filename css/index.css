@@ -6,10 +6,9 @@
 
 .index-txt {
   display: inline-block;
-  margin-left: 150px;
+  margin-left: 5%;
   top: 33%;
   position: absolute;
-  width: 50%;
 }
 
 .type {
@@ -22,13 +21,13 @@
 /* Slideshow */
 
 .slideshow-container {
-  max-width: 500px;
-  min-width: 300px;
-  height: 600px;
-  position: relative;
-  margin-left: auto;
-  padding: 5px;
-  border-left: solid 2px #042B48;
+  max-width: 550px;
+    min-width: 300px;
+    height: 600px;
+    position: relative;
+    width: 40%;
+    float: right;
+    margin-right: 50px;
 }
 
 .slide {
@@ -109,11 +108,6 @@
     100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
   }
 
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
-
 
 /* Typing Animation */
 
@@ -129,23 +123,23 @@
 }
   @-webkit-keyframes typewriter {
     from{width: 0;}
-    to{width: 23.5em;}
+    to{width: 20em;}
   }
   @-moz-keyframes typewriter {
     from{width: 0;}
-    to{width: 23.5em;}
+    to{width: 20em;}
   }
   @-ms-keyframes typewriter {
     from{width: 0;}
-    to{width: 23.5em;}
+    to{width: 20em;}
   }
   @-o-keyframes typewriter {
     from{width: 0;}
-    to{width: 23.5em;}
+    to{width: 20em;}
   }
   @keyframes typewriter{
     from{width: 0;}
-    to{width: 23.5em;}
+    to{width: 20em;}
   }
 
   @-webkit-keyframes typewriter {
@@ -221,7 +215,59 @@
 
 /* Mobile Optimization */
 
+/* Tablet Optimization */
+
+@media only screen and (max-width: 1050px) {
+
+  h2 {
+    text-align: center;
+  }
+
+  .text {font-size: 11px}
+
+    .index-txt {
+      margin: 100px 0px 0px 0px;
+      display: block;
+      position: relative;
+      width: 100%;
+      top: 0px;
+    }
+
+    .slideshow-container {
+      margin: auto;
+      border: none;
+      position: sticky;
+      display: block;
+      height: 500px;
+      margin-top: 70px;
+      float: none;
+    }
+
+    .type {
+      animation: none;
+      white-space: normal;
+      text-align: center;
+    }
+
+    .slide-txt {
+      bottom: -40px;
+      text-align: center;
+      width: inherit;
+    }
+
+    .date {
+      writing-mode: unset;
+      left: 0px;
+      top: -20px;
+    }
+
+}
+
+/* Phone Optimization */
+
   @media only screen and (max-width: 600px) {
+
+    .text {font-size: 11px}
 
     .index-txt {
       margin: 0px;
@@ -238,6 +284,7 @@
       display: block;
       height: 500px;
       margin-top: 70px;
+      float: none;
     }
 
     .type {

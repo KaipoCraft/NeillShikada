@@ -4,9 +4,8 @@
 <link rel="stylesheet" type="text/css" href="css/master.css">
 <link rel="stylesheet" type="text/css" href="css/artwork.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap">
-<link rel="stylesheet" link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap">
 <script src="master.js"></script>
 
 <html>
@@ -48,105 +47,116 @@
         </div>
   
         <!--element to open the sidenav-->
-        <span id="navopen" onclick="openNav()" tabindex="0">
-          <i class="fas fa-bars" id="menu-bars"></i>
-        </span>
-  
-        <a href="https://neillshikada.com">
-          <h1 class="name">neill kaipo shikada</h1>
-        </a>  
+        <div class="nav-parent">
 
-    </header>
+          <span id="navopen" onclick="openNav()" tabindex="0">
+          </span>
+    
+          <a href="https://neillshikada.com" style="height: 39px;display: inline-block;top: 0px;vertical-align: top;">
+            <h1 class="name">neill kaipo shikada</h1>
+          </a>  
+
+        </div>
+
+      </header>
 
 
 
 
     <div class="main">
 
-      <a class="art-card" href="https://neillshikada.com/artwork/cypress">
+      <a class="art-card" id="card-1" href="https://neillshikada.com/artwork/cypress">
 
         <img class="art-img" src="library/610/cypress-1.jpg">
             
          <div class="overlay">
             <h1 id="art-title">portrait of a cypress</h1>
             <h2 id="subtitle">lake louisa, florida</h2>
+            <h3 id="date">12 &#124; 2020</h3>
          </div>
         
       </a>
-        
-      <a class="art-card" href="https://neillshikada.com/artwork/everglades">
-            
-        <img class="art-img" src="library/610/creek.jpg">
 
-        <div class="overlay">
-          <h1 id="art-title">headwaters</h1>
-          <h2 id="subtitle">shingle creek, florida</h2>
-        </div>
-
-       </a>
-
-      <a class="art-card" href="https://neillshikada.com/artwork/sunrise">
+      <a class="art-card" id="card-2" href="https://neillshikada.com/artwork/sunrise">
             
         <img class="art-img" src="library/610/sunrise.jpg">
       
         <div class="overlay">
           <h1 id="art-title">sunrise over the atlantic</h1>
           <h2 id="subtitle">apollo beach, florida</h2>
+          <h3 id="date">12 &#124; 2020</h3>
         </div>
 
       </a>
 
-      <a class="art-card" href="https://neillshikada.com/artwork/sunset">
+      <a class="art-card" id="card-3" href="https://neillshikada.com/artwork/sunset">
             
         <img class="art-img" src="library/610/sunset.jpg">
         
         <div class="overlay">
           <h1 id="art-title">sunset over the gulf</h1>
           <h2 id="subtitle">clearwater beach, florida</h2>
+          <h3 id="date">12 &#124; 2020</h3>
         </div>
 
       </a>
 
-      <a class="art-card" href="https://neillshikada.com/artwork/basilica">
+      <a class="art-card" id="card-4" href="https://neillshikada.com/artwork/everglades">
             
-        <img class="art-img" src="library/610/basilica.jpg">
+        <img class="art-img" src="library/610/creek.jpg">
+
+        <div class="overlay">
+          <h1 id="art-title">headwaters</h1>
+          <h2 id="subtitle">shingle creek, florida</h2>
+          <h3 id="date">1 &#124; 2021</h3>
+        </div>
+
+      </a>
+
+      <a class="art-card" id="card-5" href="https://neillshikada.com/artwork/boathouse">
+            
+        <img class="art-img" src="library/610/boathouse.jpg">
      
         <div class="overlay">
-          <h1 id="art-title">basilica palladiana</h1>
-          <h2 id="subtitle">vicenza, italy</h2>
+          <h1 id="art-title">boathouse row 1</h1>
+          <h2 id="subtitle">fairmount park, philadephia</h2>
+          <h3 id="date">09 &#124; 2020</h3>
         </div>
 
       </a>
 
-      <a class="art-card" href="https://neillshikada.com/artwork/functionless">
+      <a class="art-card" id="card-6" href="https://neillshikada.com/artwork/functionless">
             
         <img class="art-img" src="library/610/arch.jpg">
      
         <div class="overlay">
           <h1 id="art-title">functionless</h1>
           <h2 id="subtitle">spruce hill, philadelphia</h2>
+          <h3 id="date">10 &#124; 2020</h3>
         </div>
 
       </a>
 
-      <a class="art-card" href="https://neillshikada.com/artwork/boathouse">
+      <a class="art-card" id="card-7" href="https://neillshikada.com/artwork/still">
             
-        <img class="art-img" src="library/610/boathouse.jpg">
+        <img class="art-img" src="library/610/boathouse-skt.jpg">
      
         <div class="overlay">
-          <h1 id="art-title">boathouse row</h1>
+          <h1 id="art-title">boathouse row 2</h1>
           <h2 id="subtitle">fairmount park, philadephia</h2>
+          <h3 id="date">10 &#124; 2020</h3>
         </div>
 
       </a>
 
-      <a class="art-card" href="https://neillshikada.com/artwork/still">
+      <a class="art-card" id="card-8" href="https://neillshikada.com/artwork/basilica">
             
-        <img class="art-img" src="library/610/still-1.jpg">
+        <img class="art-img" src="library/610/basilica.jpg">
      
         <div class="overlay">
-          <h1 id="art-title">warm and cool still life</h1>
-          <h2 id="subtitle"></h2>
+          <h1 id="art-title">basilica palladiana</h1>
+          <h2 id="subtitle">vicenza, italy</h2>
+          <h3 id="date">08 &#124; 2020</h3>
         </div>
 
       </a>

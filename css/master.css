@@ -6,7 +6,7 @@
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: /*#F7ECDC*/ #FFFBF5;
+  background-color: #FFFBF5;
 }
 
 header {
@@ -22,33 +22,26 @@ header {
 
 /*Navigator*/
 
-
+.nav-parent {
+  width: auto;
+  height: auto;
+  position: absolute;
+}
 
 #navopen {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border-style: solid;
-  border-color: #042B48;
-  /*background-color: #042B48;*/
+  border-color: #003171;
   display: inline-block;
-  margin-right: 10px;
-  position: absolute;
   transition: 0.5s;
-  border-width: 3.5px;
-}
-
-#menu-bars {
-  color: #042B48;
-  font-size: 24px;
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding-top: 2px;
+  border-width: 3px;
 }
 
   #navopen:hover, #navopen:active, #navopen:focus{
-   background-color: #042B48;
+   background-color: #C35C57;
+   border-color: #C35C57;
    cursor: pointer;
    scale: 120%;
   }
@@ -70,15 +63,14 @@ header {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #042B48;
+  color: #FFFBF5;
   display: block;
   transition: 0.3s;
   text-align: left;
   text-transform: uppercase;
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  background-color: #FFFBF5;
-  border: solid 4px #042B48;
+  background-color: #749F8D;
   margin-bottom: 10px;
   letter-spacing: 6px;
 }
@@ -90,16 +82,17 @@ header {
   font-size: 36px;
   margin-left: 50px;
   background: none;
-  color: #042B48;
+  color: #749F8D;
   border: none;
 }
 
 .closebtn:hover {
-  color: #E0C06D;
+  color: #C35C57;
 }
 
 #nav-tab:hover {
-  background-color:  #E0C06D;
+  background-color:  #C35C57;
+  color: #FFFBF5;
 }
 
 @media screen and (max-width: 600px) {
@@ -114,10 +107,10 @@ header {
 
 
 h1 {
-  font-family: 'Roboto Slab';
+  font-family: 'Oswald', sans-serif;
   font-weight: 600;
   font-size: 25px;
-  color: #042B48;
+  color: #003171;
   text-align: left;
   margin: 0;
   margin-top: 5px;
@@ -127,26 +120,24 @@ h2 {
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 600;
   font-size: 15px;
-  color:#042B48;
+  color:#003171;
   text-justify: inter-word;
   text-align: justify;
 }
 
 h3 {
   font-family: 'Lato', Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 15px;
-  font-style: italic;
-  color: #688091;
+  color: #3D5D42;
   margin: 0;
-  margin-top: 5px;
 }
 
 p {
   font-family: 'Lato', Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
-  color: #042B48;
+  color: #003171;
   margin: auto;
   text-justify: inter-word;
   text-align: justify;
@@ -155,13 +146,17 @@ p {
 
 .name {
   font-family: 'Lato', Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #042B48;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 39px;
+
+  color: #749F8D;
+  
   display: inline-block;
-  position: absolute;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 55px;
   text-transform: capitalize;
+  vertical-align: middle;
 }
 
 
@@ -178,7 +173,7 @@ p {
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 300;
-  color: #042B48;
+  color: #003171;
 }
 
 
@@ -191,13 +186,13 @@ p {
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 300;
-  color: #042B48;
+  color: #003171;
   text-decoration: none;
   padding: 0px 100px 80px 100px;
 }
 
 #icons {
-  background-color: #042B48;
+  background-color: #003171;
   color: #FFFBF5;
   border-radius: 50%;
   padding: 10px;
@@ -212,7 +207,8 @@ p {
     cursor: pointer;
     animation-name: grow;
     animation-duration: 0.3s;
-    scale: 160%;
+    scale: 150%;
+    background-color: #C35C57;
   }
 
   @keyframes grow {
@@ -230,22 +226,9 @@ p {
   text-align: left;
 }
 
-#footer-center {
-  text-align: center;
-}
+/* Mobile Optimization (side phone / tablet) */
 
-#footer-right {
-  float: right;
-  text-align: right;
-}
-
-#footer-right:hover {
-  color: #042B48;
-}
-
-/* Mobile Optimization (side phone) */
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
 
   .main {
     margin-bottom: 50px;
@@ -294,6 +277,11 @@ p {
     text-align: center;
   }
 
+  .nav-parent {
+    position: relative;
+    margin: auto;
+  }
+
   #navopen {
     margin: auto;
     position: relative;
@@ -312,7 +300,7 @@ p {
   }
   
   .footer {
-    height: 200px;
+    height: 100px;
     padding: 0px;
     bottom: 20px;
     position: relative;

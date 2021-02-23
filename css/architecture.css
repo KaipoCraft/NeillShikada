@@ -36,54 +36,62 @@
 .main {
 	display: grid;
     grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
-    grid-gap: 1.5%;
-    grid-row-gap: 75px;
-    max-width: 100%;
-    margin-left: 50px;
-	margin-right: 50px;
+    grid-template-rows: 500px 500px 500px 500px 500px;
+    grid-column-gap: 2%;
+    grid-row-gap: 30px;
+    width: 90%;
     padding-bottom: 100px;
-    border-top: solid 3px #042B48;
     padding-top: 40px;
+    margin: auto;
 }
 
 	#card-1 {
 		grid-column-start: 1;
         grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
 	#card-2 {
-		grid-column-start: 4;
-		grid-column-end: 5;
+		grid-column-start: 1;
+		grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
 	}
 	#card-3 {
-		grid-column-start: 1;
-		grid-column-end: 2;
-	}
-	#card-4 {
-		grid-column-start: 1;
-		grid-column-end: 2;
-	}
-	#card-5 {
-		grid-column-start: 2;
-		grid-column-end: 5;
-	}
-	#card-6 {
-		grid-column-start: 1;
-		grid-column-end: 3;
-	}
-	#card-7 {
 		grid-column-start: 3;
 		grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
 	}
-    #card-8 {
+	#card-4 {
+		grid-column-start: 2;
+		grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+	}
+	#card-5 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+	}
+	#card-6 {
+		grid-column-start: 2;
+		grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 7;
+	}
+	#card-7 {
 		grid-column-start: 1;
 		grid-column-end: 5;
-        height: auto;
+        grid-row-start: 7;
+        grid-row-end: 8;
 	}
 
 	.arch-card {
 		position: relative;
 		width: 100%;
-		height: 600px;
+		height: 100%;
 		margin: auto;
 	}
 
@@ -149,7 +157,7 @@
 .arch-card:hover .arch-img{
     width: calc(100% - 10px);
     height: calc(100% - 10px);
-    border: solid 5px #C35C57;
+    border: solid 5px #003171;
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
@@ -181,15 +189,14 @@
 
 .overlay {
     position: absolute;
-    bottom: -10px;
-    left: -10px;
-    height: 20%;
+    bottom: -15px;
+    left: -20px;
+    height: auto;
     width: auto;
     opacity: 0;
     transition: .3s ease;
-    text-align: center;
-    background-color: #C35C57;
-    border: solid 6px #FFFBF5;
+    background-color: #FFFBF5;
+    border: solid 5px #003171;
 }
 
 .desc-stamp {
@@ -201,28 +208,27 @@
     opacity: 0;
     transition: .5s ease;
     text-align: center;
-    background-color: #C35C57;
-    border: solid 6px #FFFBF5;
+    background-color: #FFFBF5;
+    border: solid 5px #003171;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 #arch-title {
-    padding: 20px 20px 0px 20px;
-    text-align: center;
-    margin-top: 0px;
-    color: #FFFBF5;
-    font-style: italic;
+    text-align: left;
+    margin: 15px;
+    color: #003171;
+    text-transform: capitalize;
 }
 
 #subtitle {
-    padding: 0px 20px 0px 20px;
-    color: #FFFBF5;
-    font-weight: 400;
+    color: #4D8FAC;
+    font-weight: 300;
     font-family: 'Lato', Helvetica, sans-serif;
     text-transform: capitalize;
-    text-align: center;
+    text-align: left;
+    margin: 15px;
 }
 
 .arch-card:hover .overlay {
@@ -233,6 +239,16 @@
     opacity: 1;
 }
 
+/* Mobile Optimization (side phone / tablet) */
+
+@media only screen and (max-width: 1050px) {
+
+    .arch-img{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+}
+
 
   /* Mobile Optimization */
 
@@ -240,6 +256,9 @@
 
     .main {
         margin: 0px;
+        width: 100%;
+        grid-column-gap: unset;
+        grid-row-gap: 100px;
     }
 
     #pdf-btn {
@@ -247,21 +266,28 @@
     }
 
     #card-1, #card-2, #card-3, #card-4, #card-5, #card-6, #card-7 {
-      grid-column: 1/5;
+        grid-column: 1/6;
+        grid-row: unset;
     }
 
     .overlay {
-      opacity: 1;
-      width: 100%;
-      height: auto;
-      border: none;
-      left: unset;
-      border-top: solid 6px #FFFBF5;
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        left: unset;
+        bottom: 0px;
+        border: none;
+        background-color: rgba(255,251,245,0.75);
+    }
+
+    #subtitle {
+        color: #003171;
     }
 
     .arch-img{
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
+        height: 500px;
     }
 
     .desc-stamp {
@@ -270,6 +296,7 @@
         opacity: 1;
         border: none;
         width: 100%;
+        background-color: rgba(255,251,245,0.75);
     }
 
     #subtitle {

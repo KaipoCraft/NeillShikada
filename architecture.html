@@ -4,8 +4,8 @@
 <link rel="stylesheet" type="text/css" href="css/master.css">
 <link rel="stylesheet" type="text/css" href="css/architecture.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap">
-<link rel="stylesheet" link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap">
 <script src="master.js"></script>
 
 <html>
@@ -48,15 +48,18 @@
         </div>
   
         <!--element to open the sidenav-->
-        <span id="navopen" onclick="openNav()" tabindex="0">
-          <i class="fas fa-bars" id="menu-bars"></i>
-        </span>
-  
-        <a href="https://neillshikada.com">
-          <h1 class="name">neill kaipo shikada</h1>
-        </a>  
-  
-      </header>
+        <div class="nav-parent">
+
+          <span id="navopen" onclick="openNav()" tabindex="0">
+          </span>
+    
+          <a href="https://neillshikada.com" style="height: 39px;display: inline-block;top: 0px;vertical-align: top;">
+            <h1 class="name">neill kaipo shikada</h1>
+          </a>  
+
+        </div>
+
+    </header>
   
       <a id='pdf-btn' href="library/shikada_neill_portfolio.pdf" download="shikada_neill_portfolio.pdf" target="_blank">
         <h2 id='pdf-label'>PDF version</h2>
@@ -79,23 +82,8 @@
           </div>
   
         </a>
-          
-        <a class="arch-card" id="card-2" href="https://neillshikada.com/archwork/gateway">
-              
-          <img class="arch-img" src="library/320/GAT-04.321.png">
   
-          <div class="overlay">
-            <h1 id="arch-title">urban gateway</h1>
-            <h2 id="subtitle">savannah, georgia</h2>
-          </div>
-
-          <div class="desc-stamp">
-            <h2 id="subtitle">connecting two urban spheres</h2>
-          </div>
-  
-         </a>
-  
-        <a class="arch-card" id="card-4" href="https://neillshikada.com/archwork/fault">
+        <a class="arch-card" id="card-2" href="https://neillshikada.com/archwork/fault">
               
           <img class="arch-img" src="library/320/CHA-01.322.jpg">
           
@@ -109,23 +97,8 @@
           </div>
   
         </a>
-
-        <a class="arch-card" id="card-5" href="https://neillshikada.com/archwork/crematorium">
   
-          <img class="arch-img" src="library/312/CRE-01.312.jpg">
-              
-           <div class="overlay">
-              <h1 id="arch-title">processional crematorium</h1>
-              <h2 id="subtitle">sweetwater wetlands park, gainesville</h2>
-           </div>
-
-           <div class="desc-stamp">
-            <h2 id="subtitle">intersecting tradition, landscape, and architecture</h2>
-          </div>
-          
-        </a>
-  
-        <a class="arch-card" id="card-6" href="https://neillshikada.com/archwork/playground">
+        <a class="arch-card" id="card-3" href="https://neillshikada.com/archwork/playground">
               
           <img class="arch-img" src="library/410/PLY-07.410.jpg">
        
@@ -139,7 +112,52 @@
           </div>
   
         </a>
+
+        <a class="arch-card" id="card-4" href="https://neillshikada.com/archwork/crematorium">
   
+          <img class="arch-img" src="library/312/CRE-01.312.jpg">
+              
+           <div class="overlay">
+              <h1 id="arch-title">processional crematorium</h1>
+              <h2 id="subtitle">gainesville, florida</h2>
+           </div>
+
+           <div class="desc-stamp">
+            <h2 id="subtitle">intersecting tradition, landscape, and architecture</h2>
+          </div>
+          
+        </a>
+  
+        <a class="arch-card" id="card-5" href="https://neillshikada.com/archwork/ar">
+              
+          <img class="arch-img" src="library/610a/AR-06.610a.png">
+       
+          <div class="overlay">
+            <h1 id="arch-title">AR overlays</h1>
+            <h2 id="subtitle">philadelphia, pennsylvania</h2>
+          </div>
+
+          <div class="desc-stamp">
+            <h2 id="subtitle">investigating gallery interaction (collaboration with Daniel Flinchbaugh)</h2>
+          </div>
+  
+        </a>
+
+        <a class="arch-card" id="card-6" href="https://neillshikada.com/archwork/gateway">
+              
+          <img class="arch-img" src="library/320/GAT-02.321.jpg">
+  
+          <div class="overlay">
+            <h1 id="arch-title">urban gateway</h1>
+            <h2 id="subtitle">savannah, georgia</h2>
+          </div>
+
+          <div class="desc-stamp">
+            <h2 id="subtitle">connecting two urban spheres</h2>
+          </div>
+  
+        </a>
+
         <a class="arch-card" id="card-7" href="https://neillshikada.com/archwork/museum">
               
           <img class="arch-img" src="library/510/MUS-01.513.jpg">
@@ -151,21 +169,6 @@
 
           <div class="desc-stamp">
             <h2 id="subtitle">exploring the logical conclusion of museum philosophy</h2>
-          </div>
-  
-        </a>
-
-        <a class="arch-card" id="card-8" href="https://neillshikada.com/archwork/ar">
-              
-          <img class="arch-img" src="library/610a/AR-06.610a.png">
-       
-          <div class="overlay">
-            <h1 id="arch-title">AR overlays</h1>
-            <h2 id="subtitle">philadelphia, pennsylvania</h2>
-          </div>
-
-          <div class="desc-stamp">
-            <h2 id="subtitle">investigating gallery interaction (collaboration with Daniel Flinchbaugh)</h2>
           </div>
   
         </a>

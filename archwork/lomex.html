@@ -4,8 +4,8 @@
 <link rel="stylesheet" type="text/css" href="../css/master.css">
 <link rel="stylesheet" type="text/css" href="../css/arch.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap">
-<link rel="stylesheet" link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
 <script src="../master.js"></script>
 <script src="port.js"></script>
@@ -43,16 +43,20 @@
         <a id="nav-tab" href="https://neillshikada.com/architecture">architecture</a>
         <a id="nav-tab" href="https://neillshikada.com/about">about</a>
 
+
       </div>
 
       <!--element to open the sidenav-->
-      <span id="navopen" onclick="openNav()" tabindex="0">
-        <i class="fas fa-bars" id="menu-bars"></i>
-      </span>
+      <div class="nav-parent">
 
-      <a href="https://neillshikada.com">
-        <h1 class="name">neill kaipo shikada</h1>
-      </a>  
+        <span id="navopen" onclick="openNav()" tabindex="0">
+        </span>
+  
+        <a href="https://neillshikada.com" style="height: 39px;display: inline-block;top: 0px;vertical-align: top;">
+          <h1 class="name">neill kaipo shikada</h1>
+        </a>  
+
+      </div>
 
     </header>
 
@@ -60,11 +64,11 @@
 
   	<div class="main">
 
-      <div class="description">
+      <div class="arch-txt">
 
         <h1 class="proj-title">LOM-X-R</h1>
         <h2>*A virtual reality experience of the unbuilt Lower Manhattan Expressway*</h2>
-        <p class="proj-description">
+        <p class="description">
           You wake up amongst the surreal beauty of a mid-century modernist's dream: the Lower Manhattan Expressway.
           You are the descendant of Paul Rudolph - the architect himself - still entrusted with the upkeep of the LOMEX.
           Recently there have been calls for demolishion of the LOMEX, you are tasked with finding a way to stop the city of New York from going through with it.
@@ -73,12 +77,12 @@
         
         <div class="page-change_parent">
 
-          <a class="prev-proj prev-end">
+          <a class="prev-end">
             <i class="fas fa-long-arrow-alt-left"></i>
             Previous Project
           </a>
 
-          <a class="next-proj" href="https://neillshikada.com/archwork/gateway">
+          <a class="next-proj" href="https://neillshikada.com/archwork/fault">
             Next Project
             <i class="fas fa-long-arrow-alt-right"></i>
           </a>
