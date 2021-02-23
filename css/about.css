@@ -172,7 +172,7 @@
 }
 
   .contact-icon:hover {
-    background-color: #042B48;
+    background-color: #003171;
   }
 
 .tooltip {
@@ -254,7 +254,6 @@
   position: relative;
   margin-left: auto;
   padding: 5px;
-  border-left: solid 2px #042B48;
   float: right;
 }
 

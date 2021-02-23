@@ -123,6 +123,7 @@ h2 {
   color:#003171;
   text-justify: inter-word;
   text-align: justify;
+  line-height: 22px;
 }
 
 h3 {
@@ -137,7 +138,8 @@ p {
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;
-  color: #003171;
+  line-height: 22px;
+  color: #4D8FAC;
   margin: auto;
   text-justify: inter-word;
   text-align: justify;
