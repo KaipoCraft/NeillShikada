@@ -123,23 +123,23 @@
 }
   @-webkit-keyframes typewriter {
     from{width: 0;}
-    to{width: 20em;}
+    to{width: 20.5em;}
   }
   @-moz-keyframes typewriter {
     from{width: 0;}
-    to{width: 20em;}
+    to{width: 20.5em;}
   }
   @-ms-keyframes typewriter {
     from{width: 0;}
-    to{width: 20em;}
+    to{width: 20.5em;}
   }
   @-o-keyframes typewriter {
     from{width: 0;}
-    to{width: 20em;}
+    to{width: 20.5em;}
   }
   @keyframes typewriter{
     from{width: 0;}
-    to{width: 20em;}
+    to{width: 20.5em;}
   }
 
   @-webkit-keyframes typewriter {
