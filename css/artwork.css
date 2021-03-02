@@ -226,11 +226,10 @@
 
 #date {
     color: #3D5D42;
-    text-orientation: upright;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     position: absolute;
     height: 100px;
-    top: -115px;
+    top: -80px;
     left: -5px;
 }
 
