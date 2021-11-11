@@ -1,3 +1,11 @@
+/* Colors */
+
+:root {
+  --nksAccent: #e184ce;
+  --nksWhite: #f2f2f2;
+  --nksBlack: #151515;
+}
+
 /*Main Layout*/
 
 
@@ -6,7 +14,7 @@
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: #FFFBF5;
+  background-color: var(--nksWhite);
 }
 
 header {
@@ -33,15 +41,15 @@ header {
   height: 30px;
   border-radius: 50%;
   border-style: solid;
-  border-color: #003171;
+  border-color: var(--nksBlack);
   display: inline-block;
   transition: 0.5s;
-  border-width: 3px;
+  border-width: 4px;
 }
 
   #navopen:hover, #navopen:active, #navopen:focus{
-   background-color: #C35C57;
-   border-color: #C35C57;
+   color: var(--nksWhite);
+   border-color: var(--nksAccent);
    cursor: pointer;
    scale: 120%;
   }
@@ -63,14 +71,15 @@ header {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #FFFBF5;
+  color: var(--nksBlack);
+  background-color: var(--nksWhite);
+  border: solid 2px var(--nksBlack);
   display: block;
   transition: 0.3s;
   text-align: left;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  background-color: #749F8D;
+  font-weight: 300;
   margin-bottom: 10px;
   letter-spacing: 6px;
 }
@@ -82,17 +91,17 @@ header {
   font-size: 36px;
   margin-left: 50px;
   background: none;
-  color: #749F8D;
+  color: var(--nksBlack);
   border: none;
 }
 
 .closebtn:hover {
-  color: #C35C57;
+  color: var(--nksAccent);
 }
 
 #nav-tab:hover {
-  background-color:  #C35C57;
-  color: #FFFBF5;
+  border-color:  var(--nksAccent);
+  color: var(--nksAccent);
 }
 
 @media screen and (max-width: 600px) {
@@ -110,7 +119,7 @@ h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   font-size: 25px;
-  color: #003171;
+  color: var(--nksBlack);
   text-align: left;
   margin: 0;
   margin-top: 5px;
@@ -120,7 +129,7 @@ h2 {
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 600;
   font-size: 15px;
-  color:#003171;
+  color:var(--nksBlack);
   text-justify: inter-word;
   text-align: justify;
   line-height: 22px;
@@ -130,7 +139,7 @@ h3 {
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 500;
   font-size: 15px;
-  color: #3D5D42;
+  color: var(--nksBlack);
   margin: 0;
 }
 
@@ -139,7 +148,7 @@ p {
   font-weight: 300;
   font-size: 15px;
   line-height: 22px;
-  color: #4D8FAC;
+  color: var(--nksBlack);
   margin: auto;
   text-justify: inter-word;
   text-align: justify;
@@ -149,16 +158,15 @@ p {
 .name {
   font-family: 'Lato', Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 39px;
-
-  color: #749F8D;
-  
+  color: var(--nksBlack);
   display: inline-block;
   margin: 0 0 0 55px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   vertical-align: middle;
+  letter-spacing: 3px;
 }
 
 
@@ -166,7 +174,7 @@ p {
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 600;
-  color: #49423a;
+  color: var(--nksBlack);
   margin-bottom: 30px;
   text-transform: lowercase;
 }
@@ -175,7 +183,7 @@ p {
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 300;
-  color: #003171;
+  color: var(--nksBlack);
 }
 
 
@@ -188,14 +196,14 @@ p {
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 300;
-  color: #003171;
+  color: var(--nksBlack);
   text-decoration: none;
   padding: 0px 100px 80px 100px;
 }
 
 #icons {
-  background-color: #003171;
-  color: #FFFBF5;
+  background-color: var(--nksBlack);
+  color: var(--nksWhite);
   border-radius: 50%;
   padding: 10px;
   margin-right: 10px;
@@ -210,7 +218,7 @@ p {
     animation-name: grow;
     animation-duration: 0.3s;
     scale: 150%;
-    background-color: #C35C57;
+    background-color: var(--nksAccent);
   }
 
   @keyframes grow {
