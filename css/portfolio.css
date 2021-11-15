@@ -1,0 +1,245 @@
+/* body layout */
+
+.main {
+	display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    grid-template-rows: 500px 500px 500px 500px 500px;
+    grid-column-gap: 2%;
+    grid-row-gap: 30px;
+    width: 80%;
+    padding-bottom: 100px;
+    padding-top: 75px;
+    margin: auto;
+}
+
+	#card-1 {
+		grid-column-start: 1;
+        grid-column-end: 4;
+    }
+	#card-2 {
+		grid-column-start: 1;
+		grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+	}
+	#card-3 {
+		grid-column-start: 3;
+		grid-column-end: 5;
+	}
+	#card-4 {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+	#card-5 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	#card-6 {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+	#card-7 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+    #card-8 {
+		grid-column-start: 1;
+		grid-column-end: 5;
+	}
+
+	.arch-card {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+
+/* fade in on load */
+
+.arch-card img {
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    /* Opera < 12.1 */
+    @-o-keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+.arch-img {
+    width: inherit;
+    height: inherit;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.arch-card:hover {
+    scale: 102%;
+    cursor: pointer;
+
+    -webkit-animation: emphasize 0.2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: emphasize 0.2s; /* Firefox < 16 */
+        -ms-animation: emphasize 0.2s; /* Internet Explorer */
+         -o-animation: emphasize 0.2s; /* Opera < 12.1 */
+            animation: emphasize 0.2s;
+}
+
+.arch-card:hover .arch-img{
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border: solid 3px var(--nksWhite);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+        /* Firefox < 16 */
+        @-moz-keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
+        /* Internet Explorer */
+        @-ms-keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
+        /* Opera < 12.1 */
+        @-o-keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
+        @keyframes emphasize {
+            0% {scale: 100%}
+            100% {scale: 102%;}
+        }
+
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: var(--nksWhite);
+    border: solid 3px var(--nksWhite);
+}
+
+#arch-title {
+    text-align: left;
+    margin: 15px;
+    color: var(--nksAccent);
+    text-transform: capitalize;
+}
+
+#subtitle {
+    color: var(--nksAccent);
+    font-weight: 400;
+    font-family: 'Lato', Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 15px;
+}
+
+.arch-card:hover .overlay {
+    opacity: 0.85;
+}
+
+.arch-card:hover .desc-stamp {
+    opacity: 0.85;
+}
+
+/* Mobile Optimization (side phone / tablet) */
+
+@media only screen and (max-width: 1050px) {
+
+    .arch-img{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+
+  /* Mobile Optimization */
+
+  @media only screen and (max-width: 600px) {
+
+    .main {
+        margin: 0px;
+        width: 100%;
+        grid-column-gap: unset;
+        grid-row-gap: 100px;
+    }
+
+    #pdf-btn {
+        margin-right: auto;
+    }
+
+    #card-1, #card-2, #card-3, #card-4, #card-5, #card-6, #card-7 {
+        grid-column: 1/6;
+        grid-row: unset;
+    }
+
+    .overlay {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        left: unset;
+        bottom: 0px;
+        border: none;
+        background-color: rgba(255,251,245,0.85);
+    }
+
+    #subtitle {
+        color: var(--nksAccent);
+    }
+
+    .arch-img{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        height: 500px;
+    }
+
+    .desc-stamp {
+        right: 0px;
+        padding: 0px;
+        opacity: 1;
+        border: none;
+        width: 100%;
+        background-color: rgba(255,251,245,0.75);
+    }
+
+  }

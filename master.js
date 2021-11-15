@@ -1,22 +1,3 @@
-/* Open the sidenav */
-function openNav() {
-  var menu = document.getElementById("mynavigator");
-  //var screen = (document.getElementsByClassName("mother"));
-  
-  if (window.screen.width <= "600px") {
-    menu.style.width = "100%";
-  }
-
-  else {
-    menu.style.width = "25%";
-  }
-}
-
-/* Close/hide the sidenav */
-function closeNav() {
-  document.getElementById("mynavigator").style.width = "0";
-}
-
 /* Contact - Copy to Clipboard */
 
 function CopyNumber() {

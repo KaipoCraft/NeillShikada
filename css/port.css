@@ -1,0 +1,282 @@
+/* Master Overrides */
+
+.main {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    width: 100%;
+}
+
+/* arch-txt Text */
+
+
+.arch-txt {
+    position: relative;
+    max-width: 350px;
+    min-width: 315px;
+    height: 550px;
+    left: 20%;
+    top: 50px;
+    width: 40%;
+}
+
+.proj-title {
+  color: var(--nksBlack);
+}
+
+.description {
+    color: var(--nksBlack);
+    padding: 15px 0px 15px 0px;
+}
+
+.proj-emph {
+  font-weight: 900;
+  display: block;
+}
+
+/* Navigator Buttons */
+
+.page-change_parent {
+  display: block;
+  height: 25px;
+}
+
+  .prev-proj {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--nksBlack);
+    
+      padding: 5px;
+      border-radius: 6px;
+      float: left;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  .prev-end {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--nksGray);
+    
+      padding: 5px;
+      border-radius: 6px;
+      float: left;
+      cursor: auto;
+      text-decoration: none;
+  }
+
+  .prev-proj:hover {
+    background-color: var(--nksAccent);
+    color: var(--nksWhite);
+  }
+  .prev-proj:focus {
+    background-color: var(--nksAccent);
+    color: var(--nksWhite);
+  }
+
+  .next-proj {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--nksBlack);
+    
+      padding: 5px;
+      border-radius: 6px;
+      float: right;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  .next-end {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--nksGray);
+    
+      padding: 5px;
+      border-radius: 6px;
+      float: right;
+      cursor: auto;
+      text-decoration: none;
+  }
+
+  .next-proj:hover {
+    background-color: var(--nksAccent);
+    color: var(--nksWhite);
+  }
+  .next-proj:focus {
+    background-color: var(--nksAccent);
+    color: var(--nksWhite);
+  }
+
+
+/* Carousel */
+
+
+
+.slideshow {
+    max-width: 1000px;
+    max-height: 750px;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.portSlides {
+    display: none;
+    height: 100%;
+}
+
+.imgSlide {
+    width: 100%;
+    object-fit: contain;
+    height: 600px;
+}
+
+#vidSlide {
+  width: 90%;
+  height: 400px;
+  margin: 102px auto 102px auto;
+  display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    width: auto;
+    padding: 250px 35px 250px 35px;
+    margin: 50px 0px 50px 0px;
+    color: var(--nksWhite);
+    -webkit-text-stroke: 2px var(--nksBlack);
+     font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a red background color */
+.prev:hover, .next:hover {
+    color: var(--nksAccent);
+  }
+  .prev:focus, .next:focus {
+    color: var(--nksAccent);
+  }
+  
+  /* Caption text */
+  .caption {
+    font-family: 'Lato', Helvetica, sans-serif;
+    color: var(--nksBlack);
+    position: absolute;
+    bottom: -30px;
+    width: inherit;
+    height: 20px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--nksWhite);
+    border: 2px var(--nksBlack) solid;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: var(--nksAccent);
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation: 'fade' 0.7s;
+   -moz-animation: 'fade' 0.7s;
+    -ms-animation: 'fade' 0.7s;
+     -o-animation: 'fade' 0.7s;
+        animation: 'fade' 0.7s;
+  }
+
+      @-webkit-keyframes fade {
+        0% {opacity: 0.4;} 
+        100% {opacity: 1;}
+      }
+      @-moz-keyframes fade {
+        0% {opacity: 0.4;} 
+        100% {opacity: 1;}
+      }
+      @-ms-keyframes fade {
+        0% {opacity: 0.4;} 
+        100% {opacity: 1;}
+      }
+      @-o-keyframes fade {
+        0% {opacity: 0.4;} 
+        100% {opacity: 1;}
+      }
+      @keyframes fade {
+        0% {opacity: 0.4;} 
+        100% {opacity: 1;}
+      }
+
+
+  /* Mobile Optimization (side phone) */
+
+  @media only screen and (max-width: 1050px) {
+
+    .main {
+        grid-template-columns: auto;
+        margin-top: 50px;
+    }
+
+    .arch-txt {
+      top: 0px;
+      width: auto;
+      display: block;
+      position: relative;
+      margin-bottom: 200px;
+    }
+
+    .description {
+      margin: 20px;
+      padding: 0px;
+    }
+
+    .slideshow {
+      padding: 0px;
+      border: none;
+      width: 100%;
+    }
+  }
+
+  /* Mobile Optimization (upright phone) */
+
+  @media only screen and (max-width: 600px) {
+
+    .main {
+        grid-template-columns: auto;
+    }
+
+    .arch-txt {
+      left: auto;
+      margin: auto auto 100px auto;
+    }
+
+    .description {
+      margin: 20px;
+      padding: 0px;
+    }
+
+    .slideshow {
+      width: 100%;
+      margin-bottom: 75px;
+    }
+  }

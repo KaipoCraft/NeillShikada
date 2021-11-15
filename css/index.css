@@ -22,12 +22,13 @@
 
 .slideshow-container {
   max-width: 550px;
-    min-width: 300px;
-    height: 600px;
-    position: relative;
-    width: 40%;
-    float: right;
-    margin-right: 50px;
+  min-width: 300px;
+  height: 600px;
+  position: relative;
+  width: 40%;
+  float: right;
+  margin-right: 10%;
+  display: none;
 }
 
 .slide {

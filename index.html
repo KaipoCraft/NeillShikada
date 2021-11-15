@@ -34,29 +34,25 @@
   <body class="mother">
 
     <header>
-  
-      <div id="mynavigator" class="navigator">
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-          <i class="fas fa-times-circle"></i>
-        </a>
-    
-        <a id="nav-tab" href="https://neillshikada.com/architecture">portfolio</a>
-        <a id="nav-tab" href="https://neillshikada.com/resume">resume</a>
-        <a id="nav-tab" href="https://neillshikada.com/about">about</a>
-    
-      </div>
     
       <!--element to open the sidenav-->
       <div class="nav-parent">
+
+        <a href="https://neillshikada.com" tabindex="0" id="header-container">
     
-        <span id="navopen" onclick="openNav()" tabindex="0">
-        </span>
-    
-        <a href="https://neillshikada.com" style="height: 39px;display: inline-block;top: 0px;vertical-align: top;">
-          <h1 class="name">neill kaipo shikada</h1>
-        </a>  
-    
+          <img src="library/logo.png" id="header-logo">
+
+          <h1 id="header-name">neill kaipo shikada</h1>
+
+        </a>
+
+        <div id="navigation">
+          <a class="nav-tab" tabindex="1" href="https://neillshikada.com/portfolio">portfolio</a>
+          <a class="nav-tab" tabindex="2" href="https://neillshikada.com/resume">resume</a>
+          <a class="nav-tab" tabindex="3" href="https://neillshikada.com/about">about</a>
+        </div>
+
+
       </div>
 
     </header>
@@ -140,9 +136,9 @@
     <footer class="footer">
 
       <div class="footer-col" id="footer-left">
-        <a id="icons" target="_blank" class="fab fa-instagram" href="https://www.instagram.com/kaipocraft/"><a>
-        <a id="icons" target="_blank" class="fab fa-linkedin" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
-        <a id="icons" target="_blank" class="fab fa-github" href="https://github.com/KaipoCraft"></a>
+        <a id="icons" tabindex="4" target="_blank" class="fab fa-instagram" href="https://www.instagram.com/kaipocraft/"><a>
+        <a id="icons" tabindex="5" target="_blank" class="fab fa-linkedin" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
+        <a id="icons" tabindex="6" target="_blank" class="fab fa-github" href="https://github.com/KaipoCraft"></a>
       </div>
       <div class="footer-col" id="footer-center"></div>
       <div class="footer-col" id="footer-right"></div>

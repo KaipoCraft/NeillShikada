@@ -4,11 +4,14 @@
   --nksAccent: #e184ce;
   --nksWhite: #f2f2f2;
   --nksBlack: #151515;
+  --nksGray: #858585;
 }
 
 /*Main Layout*/
 
-
+.main {
+  margin-top: 50px;
+}
 
 .mother {
   display: grid;
@@ -18,8 +21,6 @@
 }
 
 header {
-  padding-left: 100px;
-  padding-right: 100px;
   padding-top: 40px;
   padding-bottom: 0rem;
   position: relative;
@@ -31,28 +32,69 @@ header {
 /*Navigator*/
 
 .nav-parent {
-  width: auto;
+  width: 100%;
   height: auto;
+  position: absolute;
+  margin: auto;
+}
+
+#header-container {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+  #header-container:hover {
+    cursor: pointer;
+  }
+
+#navigation {
+  float: right;
+  height: 40px;
+  margin-right: 100px;
+}
+
+#header-name {
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: var(--nksBlack);
+  display: inline-block;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   position: absolute;
 }
 
-#navopen {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: var(--nksBlack);
+.nav-tab {
+  text-decoration: none;
+  background-color: var(--nksWhite);
+  transition: 0.3s;
+  text-align: left;
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 39px;
+  color: var(--nksBlack);
+  display: inline-block;
+  margin: 0 0 0 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+  .nav-tab:hover, .nav-tab:focus {
+    color: var(--nksAccent);
+  }
+
+#header-logo {
+  height: 40px;
   display: inline-block;
   transition: 0.5s;
   border-width: 4px;
+  border: solid 2px var(--nksBlack);
 }
-
-  #navopen:hover, #navopen:active, #navopen:focus{
-   color: var(--nksWhite);
-   border-color: var(--nksAccent);
-   cursor: pointer;
-   scale: 120%;
-  }
 
 .navigator {
   height: 100%;
@@ -65,48 +107,6 @@ header {
   padding-top: 60px;
   transition: 0.3s;
   white-space: nowrap;
-}
-
-.navigator a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: var(--nksBlack);
-  background-color: var(--nksWhite);
-  border: solid 2px var(--nksBlack);
-  display: block;
-  transition: 0.3s;
-  text-align: left;
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  margin-bottom: 10px;
-  letter-spacing: 6px;
-}
-
-.navigator .closebtn {
-  position: absolute;
-  top: 0;
-  right: 0px;
-  font-size: 36px;
-  margin-left: 50px;
-  background: none;
-  color: var(--nksBlack);
-  border: none;
-}
-
-.closebtn:hover {
-  color: var(--nksAccent);
-}
-
-#nav-tab:hover {
-  border-color:  var(--nksAccent);
-  color: var(--nksAccent);
-}
-
-@media screen and (max-width: 600px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 
@@ -155,19 +155,7 @@ p {
   display: inline-block;
 }
 
-.name {
-  font-family: 'Lato', Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 39px;
-  color: var(--nksBlack);
-  display: inline-block;
-  margin: 0 0 0 55px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  letter-spacing: 3px;
-}
+
 
 
 .subtitle {
@@ -213,7 +201,7 @@ p {
   text-align: center;
 }
 
-  #icons:hover {
+  #icons:hover, #icons:focus {
     cursor: pointer;
     animation-name: grow;
     animation-duration: 0.3s;
@@ -282,7 +270,7 @@ p {
   }
 
   header {
-    height: 100px;
+    height: 150px;
     padding: 20px 0 0 0;
     text-align: center;
   }
@@ -291,8 +279,27 @@ p {
     position: relative;
     margin: auto;
   }
+  
+  #navigation {
+    margin: 0px;
+    height: auto;
+    float: none;
+  }
 
-  #navopen {
+  .nav-tab {
+    margin: 0px;
+    display: block;
+    text-align: center;
+  }
+
+  #header-name {
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+  }
+
+  #header-container {
     margin: auto;
     position: relative;
     display: block;
@@ -302,12 +309,7 @@ p {
     text-align: center;
   }
 
-  .name {
-    position: relative;
-    display: block;
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-  }
+  
   
   .footer {
     height: 100px;
