@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
 <link rel="stylesheet" type="text/css" href="../css/master.css">
 <link rel="stylesheet" type="text/css" href="../css/port.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
 <script src="../master.js"></script>
 <script src="port.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
@@ -59,16 +58,24 @@
 
   	<div class="main">
 
-      <div class="arch-txt">
+      <div class="column-side"></div>
 
-        <h1 class="proj-title">LOM-X-R</h1>
-        <h2>*A virtual reality experience of the unbuilt Lower Manhattan Expressway*</h2>
-        <p class="description">
-          You wake up amongst the surreal beauty of a mid-century modernist's dream: the Lower Manhattan Expressway.
-          You are the descendant of Paul Rudolph - the architect himself - still entrusted with the upkeep of the LOMEX.
-          Recently there have been calls for demolishion of the LOMEX, you are tasked with finding a way to stop the city of New York from going through with it.
-          Your family name is on the line, better get to work.
-        </p>
+      <div class="textCard">
+
+        <div class="textCard-row"></div>
+
+        <div class="textCard-body">
+
+          <h1 class="proj-title">LOM-X-R</h1>
+          <h2>*A virtual reality experience of the unbuilt Lower Manhattan Expressway*</h2>
+          <p class="description">
+            You wake up amongst the surreal beauty of a mid-century modernist's dream: the Lower Manhattan Expressway.
+            You are the descendant of Paul Rudolph - the architect himself - still entrusted with the upkeep of the LOMEX.
+            Recently there have been calls for demolishion of the LOMEX, you are tasked with finding a way to stop the city of New York from going through with it.
+            Your family name is on the line, better get to work.
+          </p>
+
+        </div>d
         
         <div class="page-change_parent">
 
@@ -131,14 +138,16 @@
         <a class="prev fas fa-caret-left" tabindex="8" onclick="plusSlides(-1)" style="left: 0;"></a>
         <a class="next fas fa-caret-right" tabindex="9" onclick="plusSlides(1)" style="right: 0;"></a>
 
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-        <span class="dot" onclick="currentSlide(8)"></span>
+        <div id="slide-nav">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
 
       </div>
 

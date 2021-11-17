@@ -5,7 +5,6 @@
 <link rel="stylesheet" type="text/css" href="../css/port.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap">
 <script src="../master.js"></script>
 <script src="port.js"></script>
 
@@ -57,16 +56,22 @@
 
   	<div class="main">
 
-      <div class="arch-txt">
+      <div class="column-side"></div>
 
-        <h1 class="proj-title">AR Overlays</h1>
-        <h2>In collaboration with Daniel Flinchbaugh</h2>
-        <p class="description">
-          Following a series of oil paintings of the dilapidated urban industrial landscape, Daniel and I began collaborating on an augmented reality extension of his work.
-          One day after that discussion, I had these prototypes going.
-          These use Vuforia in the Unity game engine to track key points on the surface to place the overlays in position.
-          I created some speculative work looking at including animated 3D overlays as well.
-        </p>
+      <div class="textCard">
+
+        <div class="textCard-row"></div>
+
+        <div class="textCard-body">
+          <h1 class="proj-title">AR Overlays</h1>
+          <h2>In collaboration with Daniel Flinchbaugh</h2>
+          <p class="description">
+            Following a series of oil paintings of the dilapidated urban industrial landscape, Daniel and I began collaborating on an augmented reality extension of his work.
+            One day after that discussion, I had these prototypes going.
+            These use Vuforia in the Unity game engine to track key points on the surface to place the overlays in position.
+            I created some speculative work looking at including animated 3D overlays as well.
+          </p>
+        </div>
 
         <div class="page-change_parent">
 
@@ -152,12 +157,16 @@
         <a class="prev fas fa-caret-left" tabindex="9" onclick="plusSlides(-1)" style="left: 0;"></a>
         <a class="next fas fa-caret-right" tabindex="10" onclick="plusSlides(1)" style="right: 0;"></a>
 
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+        <div id="slide-nav">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
 
       </div>
+
+      <div class="column-side"></div>
 
 
   	</div>

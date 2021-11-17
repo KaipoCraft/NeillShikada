@@ -1,3 +1,100 @@
+/* 
+    Add grab cursor to the VR 3D images
+    
+    Change the font to all Lato
+    
+    Tags for projects
+    
+    Purpose statement
+    
+    Artist portfolio or tech employment?
+
+    WILL:
+    Add more mobile optimization
+    
+    Re-typed roles animation on the front page
+    
+    suggestions of a grid on the portfolio page
+    
+    Less typefaces
+    
+    Slideshow navigation centered underneath the slideshow
+    
+    slow down home page images  
+    
+    You’re fucking cool, Neill
+    
+    Tags for projects on hover
+
+
+    AMY:
+    Love the overall look and feel of your site
+    
+    Colors look great, the monochrome/greyscale of your portfolio page is really nice
+    
+    Front page: make the front gallery go slower, add an indicator that it’s an animated 
+    gallery (especially if it goes slower, might make it difficult to tell that it’s a gallery)
+    
+    Portfolio, there are two ways to flip through things.
+    
+    A bit confusing with the “previous project”, “next project”, as well as the arrows on the image carousel.
+    
+    A smaller carousel might help with this, where the project navigation is below or “encompasses” the images. 
+    Might make it more clear that the carousel is specific to the project.
+    
+    Also the gallery’s white space seems kind of random/the sizes of the images don’t seem to have a pattern?
+    
+    Overlay for your projects
+    
+    From a discovery point of view, it might be more beneficial to have all your descriptions and titles already 
+    on the images on your portfolio section but add color as you hover? — don’t make people guess what the project 
+    is/look for a description. People might not even hover over them (just scroll through instead)
+    
+    You might want to implement Skeleton or a responsive CSS framework similar to Skeleton
+    
+    It will help your page respond to computers with different page/window sizes
+    
+    My computer shows a portion of your page past the fold including the carousel dots/squares. 
+    Makes it harder to tell that it’s even a carousel. Your social link bubbles are also past the fold for me.
+    
+    Maybe just double check how your site looks on mobile?
+    
+    Carousel
+    
+    Nitpicky, but the carousel dots/square are a bit too far from the carousel itself
+    
+    Not 100% clear that they ARE carousel dots for the images above (principle of proximity)
+    
+    Could utilize opacity and make it closer?
+    
+    carousel arrows are hard to see on some images. you could move the arrows out of the images 
+    (put them next to the images instead?) This might help with the different sizes of images you have. 
+    for example on the LOM-X-R project, some images in that carousel are not as wide as others, the arrows touch the edges of the image
+    
+    Also, your page has some images throughout that are just as light, or almost as light as the background. 
+    A UX tip for this would be a drop shadow on the photos or images to show that it’s clickable (yay affordances)
+    
+    Too many fonts (feedback from the professors)
+    
+    I don’t think there are too many, I can see that the body text is similar to your name font but the title font throws me off
+    
+    The title font is super heavy weight which I can tell is by intent, but the letters are also super close together which 
+    makes it a bit distracting since all the other text has more spacing between letters.
+    
+    I’d like to see whatever problem you were trying to solve. It wasn’t very clear if these had a problem solving component, 
+    but if it did, I’d love to read about it.
+    
+    Possibly include medium that you used to create the project? Tools that you used?
+    
+    The slideshow at the beginning, the slight animation where the images shrink a tad bit is personally distracting. It would 
+    maybe be more beneficial for me if it just moved through the photos without the size animation
+    
+    Back to home?
+    
+    Maybe a way to get to home without clicking your name. People tend to automatically do what they usually do with other sites 
+    so a home section in your navigation would be easier for them to know how to get back.
+    */
+
 /* Colors */
 
 :root {
@@ -11,6 +108,8 @@
 
 .main {
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
 }
 
 .mother {
@@ -47,6 +146,8 @@ header {
     cursor: pointer;
   }
 
+  
+
 #navigation {
   float: right;
   height: 40px;
@@ -65,6 +166,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 3px;
   position: absolute;
+  text-decoration: none;
 }
 
 .nav-tab {
@@ -109,6 +211,11 @@ header {
   white-space: nowrap;
 }
 
+#header-container:hover #header-name, #header-container:hover #header-logo {
+  color: var(--nksAccent);
+  border-color: var(--nksAccent);
+}
+
 
 
 /*Body*/
@@ -116,9 +223,13 @@ header {
 
 
 h1 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-size: 25px;
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
   color: var(--nksBlack);
   text-align: left;
   margin: 0;
@@ -145,7 +256,7 @@ h3 {
 
 p {
   font-family: 'Lato', Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   line-height: 22px;
   color: var(--nksBlack);
@@ -156,7 +267,14 @@ p {
 }
 
 
-
+.textCard {
+  position: relative;
+  display: inline-grid;
+  max-width: 350px;
+  min-width: 315px;
+  height: 550px;
+  grid-template-rows: 50px 1fr 50px;
+}
 
 .subtitle {
   font-family: 'Lato', Helvetica, sans-serif;
@@ -230,6 +348,42 @@ p {
 
   .main {
     margin-bottom: 50px;
+  }
+
+  header {
+    height: 150px;
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .nav-parent {
+    position: relative;
+    margin: auto;
+  }
+  
+  #navigation {
+    margin: 0px;
+    height: auto;
+    float: none;
+  }
+
+  .nav-tab {
+    margin: 0px;
+    display: block;
+    text-align: center;
+  }
+
+  #header-name {
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+  }
+
+  #header-container {
+    margin: auto;
+    position: relative;
+    display: block;
   }
 
   .footer {

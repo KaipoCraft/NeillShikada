@@ -5,7 +5,6 @@
 <link rel="stylesheet" type="text/css" href="../css/port.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap">
 <script src="../master.js"></script>
 <script src="port.js"></script>
 
@@ -57,18 +56,26 @@
 
   	<div class="main">
 
-      <div class="arch-txt">
+      <div class="column-side"></div>
 
-        <h1 class="proj-title">Framed Exhibits</h1>
-        <h2> A collaboration with Dario Sabidussi, Martin Chen, and Huichao Dong </h2>
-        <p class="description">
-          In collaboration with the Penn Museum, our team collaborated on an exhibit focused on spatially representing information.
-          Constructed with a tube steel frame, this "cabinet of curiosities" holds 3D printed replicas of ancient artifacts from the museum's collection.
-          The organization of the artifacts is organized horizontally based on geographic origin and vertically according to age.
-          In plan, the ground forms a map of the world that reaches out to locate these artifacts area of origin.
-          Each artifact is hidden behind a veil and framed individually to allow those sitting on the surrounding bench to have a level of intimacy and meditation with each object.
-        </p>
+      <div class="textCard">
 
+        <div class="textCard-row"></div>
+
+        <div class="textCard-body">
+
+          <h1 class="proj-title">Framed Exhibits</h1>
+          <h2> A collaboration with Dario Sabidussi, Martin Chen, and Huichao Dong </h2>
+          <p class="description">
+            In collaboration with the Penn Museum, our team collaborated on an exhibit focused on spatially representing information.
+            Constructed with a tube steel frame, this "cabinet of curiosities" holds 3D printed replicas of ancient artifacts from the museum's collection.
+            The organization of the artifacts is organized horizontally based on geographic origin and vertically according to age.
+            In plan, the ground forms a map of the world that reaches out to locate these artifacts area of origin.
+            Each artifact is hidden behind a veil and framed individually to allow those sitting on the surrounding bench to have a level of intimacy and meditation with each object.
+          </p>
+
+        </div>
+        
         <div class="page-change_parent">
 
           <a class="prev-proj" tabindex="7" href="https://neillshikada.com/portfolio/gateway">
@@ -188,13 +195,15 @@
         <a class="prev fas fa-caret-left" tabindex="9" onclick="plusSlides(-1)" style="left: 0;"></a>
         <a class="next fas fa-caret-right" tabindex="10" onclick="plusSlides(1)" style="right: 0;"></a>
 
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
+        <div id="slide-nav">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
 
       </div>
 

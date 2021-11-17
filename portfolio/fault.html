@@ -5,7 +5,6 @@
 <link rel="stylesheet" type="text/css" href="../css/port.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap">
 <script src="../master.js"></script>
 <script src="port.js"></script>
 
@@ -57,17 +56,25 @@
 
   	<div class="main">
 
-      <div class="arch-txt">
+      <div class="column-side"></div>
 
-        <h1 class="proj-title">Communal Urban Fault</h1>
-        <p class="description">
-          This project is about community. 
-          The city of Charleston struggles with a lack of 3rd places and softer street edges. 
-          This project seeks to create a communal center that breaks with the urban fabric of the city. 
-          The center includes a pub, Irish dance studio, a theater, and open, public space. 
-          There are two inverted itineraries on either side of the site - one for the performers; the other for the public. 
-          These both frame and meet at the open air theater.
-        </p>
+      <div class="textCard">
+
+        <div class="textCard-row"></div>
+
+        <div class="textCard-body">
+
+          <h1 class="proj-title">Communal Urban Fault</h1>
+          <p class="description">
+            This project is about community. 
+            The city of Charleston struggles with a lack of 3rd places and softer street edges. 
+            This project seeks to create a communal center that breaks with the urban fabric of the city. 
+            The center includes a pub, Irish dance studio, a theater, and open, public space. 
+            There are two inverted itineraries on either side of the site - one for the performers; the other for the public. 
+            These both frame and meet at the open air theater.
+          </p>
+
+        </div>
 
         <div class="page-change_parent">
 
@@ -188,13 +195,15 @@
         <a class="prev fas fa-caret-left" tabindex="9" onclick="plusSlides(-1)" style="left: 0;"></a>
         <a class="next fas fa-caret-right" tabindex="10" onclick="plusSlides(1)" style="right: 0;"></a>
 
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
+        <div id="slide-nav">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
 
       </div>
 
