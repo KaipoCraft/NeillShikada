@@ -13,6 +13,7 @@
 
 .callout {
   padding-bottom: 25px;
+  width: inherit;
 }
 
 #contact-body {
@@ -198,7 +199,6 @@
   height: 600px;
   position: relative;
   float: right;
-  margin-right: 10%;
 }
 
 /* Mobile Optimization */

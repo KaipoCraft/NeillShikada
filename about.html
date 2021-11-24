@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/master.css">
 <link rel="stylesheet" type="text/css" href="css/about.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -31,41 +32,28 @@
 
   <body class="mother">
 
-    <header>
-    
-      <div class="nav-parent">
-
-        <a href="https://neillshikada.com" tabindex="0" id="header-container">
-    
-          <img src="library/logo.png" id="header-logo">
-
-          <h1 id="header-name">neill kaipo shikada</h1>
-
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <a href="https://neillshikada.com" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img class="bi me-2" width="80" height="32" id="header-logo" src="library/logo.svg"></img>
+          <span class="fs-6" id="header-name">Neill Kaipo Shikada</span>
         </a>
-
-        <div id="navigation">
-          <a class="nav-tab" tabindex="1" href="https://neillshikada.com/portfolio">portfolio</a>
-          <a class="nav-tab" tabindex="2" href="https://neillshikada.com/resume">resume</a>
-          <a class="nav-tab" tabindex="3" href="https://neillshikada.com/about">about</a>
-        </div>
-
-
-      </div>
-
-    </header>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6" aria-current="page">home</a></li>
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6">portfolio</a></li>
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6">resume</a></li>
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6 active">about</a></li>
+        </ul>
+      </header>
+    </div>
 
 
+    <div class="container">
 
+      <div class="row mb-3">
 
-    <div class="main">
-
-      <div class="column-side"></div>
-      
-      <div class="textCard">
-
-        <div class="textCard-row"></div>
-
-        <div>
+        <div class="col-lg-7 themed-grid-col">
           <h1>About</h1>
           
           <p class="callout">
@@ -77,32 +65,33 @@
           </p>
 
           <p class="callout">
-            Feel free to <a class="contact-icon" href="mailto:neillshikada@gmail.com">email me</a>.
+            Feel free to <a class="contact-icon" href="mailto:neillshikada@gmail.com">email me</a>
           </p>
+        </div>
+
+        <div class="col-lg-5 themed-grid-col">
+          <img id="profile" src="library/profile.jpg"> 
         </div>
 
       </div>
 
-      <img id="profile" src="library/profile.jpg"> 
-
-      <div class="column-side"></div>
-
     </div>
-
-
-
     
-    <footer class="footer">
-
-      <div class="footer-col" id="footer-left">
-        <a id="icons" tabindex="4" target="_blank" class="fab fa-instagram" href="https://www.instagram.com/kaipocraft/"><a>
-        <a id="icons" tabindex="5" target="_blank" class="fab fa-linkedin" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
-        <a id="icons" tabindex="6" target="_blank" class="fab fa-github" href="https://github.com/KaipoCraft"></a>
-      </div>
-      <div class="footer-col" id="footer-center"></div>
-      <div class="footer-col" id="footer-right"></div>
-
-    </footer>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-0 my-5">
+        <ul class="nav col-md justify-content-start list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="fab fa-instagram" id="icons" tabindex="4" target="_blank" href="https://www.instagram.com/kaipocraft/"></a>  
+          </li>
+          <li class="ms-3">
+            <a class="fab fa-linkedin" id="icons" tabindex="5" target="_blank" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
+          </li>
+          <li class="ms-3">
+            <a class="fab fa-github" id="icons" tabindex="6" target="_blank" href="https://github.com/KaipoCraft"></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
   </body>
 

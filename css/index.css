@@ -6,25 +6,25 @@
 
 .index-txt {
   display: inline-block;
-  margin-top: 24.5%;
+  margin-top: 40%;
 }
 
 .type {
-  border-right: 2px solid rgba(241,225,196,.6);
+  border-right: 2px solid var(--nksBlack);
   white-space: nowrap;
   overflow: hidden;
   width: inherit;
+  margin-top: 25%;
 }
 
 /* Slideshow */
 
 .slideshow-container {
-  max-width: 550px;
-  min-width: 24.50px;
-  height: 600px;
+  min-width: 400px;
+  height: 500px;
   position: relative;
   float: right;
-  margin-right: 10%;
+  width: 100%;
 }
 
 .slide {
@@ -33,7 +33,7 @@
 }
 
 .slide-img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
@@ -75,36 +75,36 @@
 
 /* Fading animation */
 .fade {
-  -webkit-animation: 'fade' 2s;
-   -moz-animation: 'fade' 2s;
-    -ms-animation: 'fade' 2s;
-     -o-animation: 'fade' 2s;
-        animation: 'fade' 2s;
+  -webkit-animation: 'fade' 8s;
+   -moz-animation: 'fade' 8s;
+    -ms-animation: 'fade' 8s;
+     -o-animation: 'fade' 8s;
+        animation: 'fade' 8s;
 }
 
   @-webkit-keyframes fade {
     0% {opacity: 0; margin-left: 10px; margin-top: -0px;} 
-    50% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+    25% {opacity: 1; margin-left: 0px; margin-top: -0px;}
     100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
   }
   @-moz-keyframes fade {
     0% {opacity: 0; margin-left: 10px; margin-top: -0px;} 
-    50% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+    25% {opacity: 1; margin-left: 0px; margin-top: -0px;}
     100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
   }
   @-ms-keyframes fade {
     0% {opacity: 0; margin-left: 10px; margin-top: -0px;} 
-    50% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+    25% {opacity: 1; margin-left: 0px; margin-top: -0px;}
     100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
   }
   @-o-keyframes fade {
     0% {opacity: 0; margin-left: 10px; margin-top: -0px;} 
-    50% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+    25% {opacity: 1; margin-left: 0px; margin-top: -0px;}
     100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
   }
   @keyframes fade {
     0% {opacity: 0; margin-left: 10px; margin-top: -0px;} 
-    50% {opacity: 1; margin-left: 0px; margin-top: -0px;}
+    25% {opacity: 1; margin-left: 0px; margin-top: -0px;}
     100% {opacity: 1; margin-left: 0px; margin-top: -0px;}
   }
 
@@ -118,28 +118,28 @@
   -moz-animation: 'typewriter' 2s;
   -ms-animation: 'typewriter' 2s;
   -o-animation: 'typewriter' 2s;
-  animation: typewriter 2s steps(44) 0.2s 1 normal both,
-             blinkTextCursor 800ms steps(44) infinite normal;
+  animation: typewriter 2s steps(44) 0.25s 1 normal both,
+             blinkTextCursor 800ms steps(44) 2s normal;
 }
   @-webkit-keyframes typewriter {
     from{width: 0;}
-    to{width: 24.5em;}
+    to{width: 39em;}
   }
   @-moz-keyframes typewriter {
     from{width: 0;}
-    to{width: 24.5em;}
+    to{width: 39em;}
   }
   @-ms-keyframes typewriter {
     from{width: 0;}
-    to{width: 24.5em;}
+    to{width: 39em;}
   }
   @-o-keyframes typewriter {
     from{width: 0;}
-    to{width: 24.5em;}
+    to{width: 39em;}
   }
   @keyframes typewriter{
     from{width: 0;}
-    to{width: 24.5em;}
+    to{width: 39em;}
   }
 
   @-webkit-keyframes typewriter {
@@ -164,60 +164,11 @@
   }
 
 
-  /* Skill */
-
-
-
-.dropdown-columns {
-  display: inline-grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  width: 100%;
-  height: 500px;
-}
-
-.skill-box {
-  width: 100%;
-  height: inherit;
-  display: inline-block;
-}
-
-.skill {
-  color: #5D8C86;
-  margin: 0;
-  font-size: 25px;
-  font-weight: normal;
-  position: relative;
-  background-color: #FFFBF5;
-  text-align: center;
-  margin: auto;
-  border: #9EBAB6 3px solid;
-}
-
-#skill-image {
-  width: 100%;
-  height: inherit;
-  display: none;
-  object-fit: contain;
-  background-color: #9EBAB6;
-  padding-bottom: 3px;
-}
-
-  .skill-box:hover .skill {
-   color: #5D8C86;
-   background-color:#9EBAB6;
-  }
-
-  .skill-box:hover #skill-image {
-    display: inline-block;
-  }
-
-
-
 /* Mobile Optimization */
 
 /* Tablet Optimization */
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1200px) {
 
   h2 {
     text-align: center;
@@ -247,6 +198,7 @@
       animation: none;
       white-space: normal;
       text-align: center;
+      border: none;
     }
 
     .slide-txt {

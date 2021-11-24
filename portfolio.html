@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/master.css">
 <link rel="stylesheet" type="text/css" href="css/portfolio.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -40,33 +41,154 @@
   
     <body class="mother">
   
-      <header>
-    
-        <!--element to open the sidenav-->
-        <div class="nav-parent">
-  
-          <a href="https://neillshikada.com" tabindex="0" id="header-container">
-      
-            <img src="library/logo.png" id="header-logo">
-  
-            <h1 id="header-name">neill kaipo shikada</h1>
-  
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+          <a href="https://neillshikada.com" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img class="bi me-2" width="80" height="32" id="header-logo" src="library/logo.svg"></img>
+            <span class="fs-6" id="header-name">Neill Kaipo Shikada</span>
           </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6" aria-current="page">home</a></li>
+            <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6 active">portfolio</a></li>
+            <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6">resume</a></li>
+            <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6">about</a></li>
+          </ul>
+        </header>
+      </div>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+          <div class="col">
+            <a class="card shadow-sm" href="https://neillshikada.com/portfolio/lomex">
+              <img class="port-img" width="100%" height="225" src="library/510a/510a-scrsht-1.png" role="img" 
+              aria-label="LOMEX VR: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>
+                  LOMEX VR
+                </title>
+              </img>
   
-          <div id="navigation">
-            <a class="nav-tab" tabindex="1" href="https://neillshikada.com/portfolio">portfolio</a>
-            <a class="nav-tab" tabindex="2" href="https://neillshikada.com/resume">resume</a>
-            <a class="nav-tab" tabindex="3" href="https://neillshikada.com/about">about</a>
+              <div class="overlay">
+                <h1 id="arch-title">LOMEX VR</h1>
+                <div class="tag-container">
+                  <h2 class="tags">Architecture</h2>
+                  <h2 class="tags">Rhinoceros</h2>
+                  <h2 class="tags">Unity</h2>
+                  <h2 class="tags">Virtual Reality</h2>
+                </div>
+              </div>
+            </a>
           </div>
+
+          <div class="col">
+            <a class="card shadow-sm" href="https://neillshikada.com/portfolio/lomex">
+              <img class="port-img" width="100%" height="225" src="library/610/boulderFalls.jpg" role="img" 
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>
+                  Motion
+                </title>
+              </img>
   
+              <div class="overlay">
+                <h1 id="arch-title">Motion Project</h1>
+                <div class="tag-container">
+                  <h2 class="tags">Motion Tracking</h2>
+                  <h2 class="tags">Python</h2>
+                  <h2 class="tags">Mediapipe</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a class="card shadow-sm" href="https://neillshikada.com/portfolio/lomex">
+              <img class="port-img" width="100%" height="225" src="library/610/rockyFlats.jpg" role="img" 
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>
+                  Cooperative Drawing Machine
+                </title>
+              </img>
   
+              <div class="overlay">
+                <h1 id="arch-title">Cooperative Drawing Machine</h1>
+                <div class="tag-container">
+                  <h2 class="tags">3D Printing</h2>
+                  <h2 class="tags">Collaboration</h2>
+                  <h2 class="tags">Movement</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a class="card shadow-sm" href="https://neillshikada.com/portfolio/lomex">
+              <img class="port-img" width="100%" height="225" src="library/510/MUS-01.513.jpg" role="img" 
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>
+                  Museum
+                </title>
+              </img>
+  
+              <div class="overlay">
+                <h1 id="arch-title">Museum</h1>
+                <div class="tag-container">
+                  <h2 class="tags">Architecture</h2>
+                  <h2 class="tags">Model Building</h2>
+                  <h2 class="tags">Photoshop</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a class="card shadow-sm" href="https://neillshikada.com/portfolio/lomex">
+              <img class="port-img" width="100%" height="225" src="library/510/CAB-01.512.gif" role="img" 
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>
+                  Space+Time Installation
+                </title>
+              </img>
+  
+              <div class="overlay">
+                <h1 id="arch-title">Space+Time Installation</h1>
+                <div class="tag-container">
+                  <h2 class="tags">Architecture</h2>
+                  <h2 class="tags">Rhinoceros</h2>
+                  <h2 class="tags">Collaboration</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a class="card shadow-sm" href="https://neillshikada.com/portfolio/lomex">
+              <img class="port-img" width="100%" height="225" src="library/610/boulderFalls.jpg" role="img" 
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>
+                  Plein Air Works
+                </title>
+              </img>
+  
+              <div class="overlay">
+                <h1 id="arch-title">Plein Air Works</h1>
+                <div class="tag-container">
+                  <h2 class="tags">Oil Painting</h2>
+                  <h2 class="tags">Artwork</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+
         </div>
-  
-      </header>
+      </div>
+
+      <!--
 
       <div class="main">
 
-        <a class="arch-card" id="card-1" href="https://neillshikada.com/portfolio/lomex">
+
+ <a class="arch-card" id="card-1" href="https://neillshikada.com/portfolio/lomex">
               
           <img class="arch-img" src="library/510a/510a-scrsht-1.png">
        
@@ -74,114 +196,105 @@
             <h1 id="arch-title">LOMEX VR</h1>
             <h2 id="subtitle">exploring an unbuilt mid-century modern world</h2>
           </div>
-
-          <!--
-          <div class="desc-stamp">
-            <h2 id="subtitle">exploring alternate realities</h2>
-          </div>
-        -->
   
-        </a>
+      </a>
   
-        <a class="arch-card" id="card-2" href="https://neillshikada.com/portfolio/fault">
-              
-          <img class="arch-img" src="library/610/boulderFalls.jpg">
-          
-          <div class="overlay">
-            <h1 id="arch-title">plein air work</h1>
-            <h2 id="subtitle">oil paintings and more</h2>
-          </div>
+      <a class="arch-card" id="card-2" href="https://neillshikada.com/portfolio/fault">
+            
+        <img class="arch-img" src="library/610/boulderFalls.jpg">
+        
+        <div class="overlay">
+          <h1 id="arch-title">plein air work</h1>
+          <h2 id="subtitle">oil paintings and more</h2>
+        </div>
 
-          <!--
-          <div class="desc-stamp">
-            <h2 id="subtitle">opening up a timid cityscape</h2>
-          </div>
-        -->
-  
-        </a>
-  
-        <a class="arch-card" id="card-3" href="https://neillshikada.com/portfolio/playground">
-              
-          <img class="arch-img" src="library/410/PLY-07.410.jpg">
-       
-          <div class="overlay">
-            <h1 id="arch-title">scalar playground</h1>
-            <h2 id="subtitle">brooklyn, new york city</h2>
-          </div>
 
-          <!--
-          <div class="desc-stamp">
-            <h2 id="subtitle">playing with the new york city block</h2>
-          </div>
-        -->
-  
-        </a>
+      </a>
 
-        <a class="arch-card" id="card-4" href="https://neillshikada.com/portfolio/crematorium">
-  
-          <img class="arch-img" src="library/312/CRE-02.312.jpg">
-              
-           <div class="overlay">
-              <h1 id="arch-title">processional crematorium</h1>
-              <h2 id="subtitle">gainesville, florida</h2>
-           </div>
+      <a class="arch-card" id="card-3" href="https://neillshikada.com/portfolio/playground">
+            
+        <img class="arch-img" src="library/410/PLY-07.410.jpg">
+     
+        <div class="overlay">
+          <h1 id="arch-title">scalar playground</h1>
+          <h2 id="subtitle">brooklyn, new york city</h2>
+        </div>
 
-           <!--
-           <div class="desc-stamp">
-            <h2 id="subtitle">intersecting tradition, landscape, and architecture</h2>
-          </div>
-        -->
-          
-        </a>
-  
-        <a class="arch-card" id="card-5" href="https://neillshikada.com/portfolio/ar">
-              
-          <img class="arch-img" src="library/610a/AR-06.610a.png">
-       
-          <div class="overlay">
-            <h1 id="arch-title">AR overlays</h1>
-            <h2 id="subtitle">philadelphia, pennsylvania</h2>
-          </div>
 
-          <!--
-          <div class="desc-stamp">
-            <h2 id="subtitle">investigating gallery interaction (collaboration with Daniel Flinchbaugh)</h2>
-          </div>
-        -->
-  
-        </a>
+      </a>
 
-        <a class="arch-card" id="card-6" href="https://neillshikada.com/portfolio/gateway">
-              
-          <img class="arch-img" src="library/320/GAT-02.321.jpg">
-  
-          <div class="overlay">
-            <h1 id="arch-title">urban gateway</h1>
-            <h2 id="subtitle">savannah, georgia</h2>
-          </div>
+      <a class="arch-card" id="card-4" href="https://neillshikada.com/portfolio/crematorium">
 
-          <!--
-          <div class="desc-stamp">
-            <h2 id="subtitle">connecting two urban spheres</h2>
-          </div>
-        -->
+        <img class="arch-img" src="library/312/CRE-02.312.jpg">
+            
+         <div class="overlay">
+            <h1 id="arch-title">processional crematorium</h1>
+            <h2 id="subtitle">gainesville, florida</h2>
+         </div>
 
-        </a>
+        
+      </a>
+
+      <a class="arch-card" id="card-5" href="https://neillshikada.com/portfolio/ar">
+            
+        <img class="arch-img" src="library/610a/AR-06.610a.png">
+     
+        <div class="overlay">
+          <h1 id="arch-title">AR overlays</h1>
+          <h2 id="subtitle">philadelphia, pennsylvania</h2>
+        </div>
+
+
+      </a>
+
+      <a class="arch-card" id="card-6" href="https://neillshikada.com/portfolio/gateway">
+            
+        <img class="arch-img" src="library/320/GAT-02.321.jpg">
+
+        <div class="overlay">
+          <h1 id="arch-title">urban gateway</h1>
+          <h2 id="subtitle">savannah, georgia</h2>
+        </div>
+
+
+      </a>
+
+      <a class="arch-card" id="card-7" href="https://neillshikada.com/portfolio/frame">
+            
+        <img class="arch-img" src="library/510/CAB-04.512.jpg">
+     
+        <div class="overlay">
+          <h1 id="arch-title">framing space-time</h1>
+          <h2 id="subtitle">philadelphia, pennsylvania</h2>
+        </div>
+
+
+      </a>
+
+      <a class="arch-card" id="card-8" href="https://neillshikada.com/portfolio/museum">
+            
+        <img class="arch-img" src="library/510/MUS-01.513.jpg">
+     
+        <div class="overlay">
+          <h1 id="arch-title">penn museum</h1>
+          <h2 id="subtitle">philadelphia, pennsylvania</h2>
+        </div>
+
+
+      </a>
+
 
         <a class="arch-card" id="card-7" href="https://neillshikada.com/portfolio/frame">
               
-          <img class="arch-img" src="library/510/CAB-04.512.jpg">
+          <img class="arch-img" src="library/510/CAB-01.512.gif">
        
           <div class="overlay">
             <h1 id="arch-title">framing space-time</h1>
-            <h2 id="subtitle">philadelphia, pennsylvania</h2>
+            <h2 class="tags">Architecture</h2>
+            <h2 class="tags">Illustrator</h2>
+            <h2 class="tags">Steel Construction</h2>
+            <h2 class="tags">Collaborative</h2>
           </div>
-
-          <!--
-          <div class="desc-stamp">
-            <h2 id="subtitle">representing information spatially</h2>
-          </div>
-        -->
   
         </a>
 
@@ -191,35 +304,36 @@
        
           <div class="overlay">
             <h1 id="arch-title">penn museum</h1>
-            <h2 id="subtitle">philadelphia, pennsylvania</h2>
+            <h2 class="tags">Illustrator</h2>
+            <h2 class="tags">Rhinoceros</h2>
+            <h2 class="tags">V Ray</h2>
+            <h2 class="tags">Architecture</h2>
           </div>
-
-          <!--
-          <div class="desc-stamp">
-            <h2 id="subtitle">exploring the logical conclusion of museum philosophy</h2>
-          </div>
-        -->
+      
   
         </a>
 
   
       </div>
+    -->
   
   
   
-  
-      <footer class="footer">
-  
-        <div class="footer-col" id="footer-left">
-          <a id="icons" tabindex="4" target="_blank" class="fab fa-instagram" href="https://www.instagram.com/kaipocraft/"><a>
-          <a id="icons" tabindex="5" target="_blank" class="fab fa-linkedin" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
-          <a id="icons" tabindex="6" target="_blank" class="fab fa-github" href="https://github.com/KaipoCraft"></a>
-        </div>
-
-        <div class="footer-col" id="footer-center"></div>
-        <div class="footer-col" id="footer-right"></div>
-  
-      </footer>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-0 my-5">
+          <ul class="nav col-md justify-content-start list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="fab fa-instagram" id="icons" tabindex="4" target="_blank" href="https://www.instagram.com/kaipocraft/"></a>  
+            </li>
+            <li class="ms-3">
+              <a class="fab fa-linkedin" id="icons" tabindex="5" target="_blank" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
+            </li>
+            <li class="ms-3">
+              <a class="fab fa-github" id="icons" tabindex="6" target="_blank" href="https://github.com/KaipoCraft"></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
   
     </body>
   

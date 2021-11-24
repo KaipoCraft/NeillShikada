@@ -106,12 +106,6 @@
 
 /*Main Layout*/
 
-.main {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr 100px;
-}
-
 .mother {
   display: grid;
   height: 100vh;
@@ -156,32 +150,24 @@ header {
 
 #header-name {
   font-family: 'Lato', Helvetica, sans-serif;
+  transition: 0.3s;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 40px;
   color: var(--nksBlack);
-  display: inline-block;
-  margin: 0 0 0 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  position: absolute;
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .nav-tab {
   text-decoration: none;
-  background-color: var(--nksWhite);
   transition: 0.3s;
-  text-align: left;
   font-family: 'Lato', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 39px;
-  color: var(--nksBlack);
-  display: inline-block;
-  margin: 0 0 0 50px;
+  margin-left: 10px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -191,10 +177,9 @@ header {
   }
 
 #header-logo {
-  height: 40px;
+  height: 44px;
   display: inline-block;
-  transition: 0.5s;
-  border-width: 4px;
+  transition: 0.3s;
   border: solid 2px var(--nksBlack);
 }
 
@@ -211,11 +196,6 @@ header {
   white-space: nowrap;
 }
 
-#header-container:hover #header-name, #header-container:hover #header-logo {
-  color: var(--nksAccent);
-  border-color: var(--nksAccent);
-}
-
 
 
 /*Body*/
@@ -228,7 +208,6 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  padding-bottom: 10px;
   letter-spacing: 2px;
   color: var(--nksBlack);
   text-align: left;
@@ -312,11 +291,9 @@ p {
   color: var(--nksWhite);
   border-radius: 50%;
   padding: 10px;
-  margin-right: 10px;
   text-decoration: none;
-  width: 25px;
-  height: 25px;
   text-align: center;
+  font-size: 24px;
 }
 
   #icons:hover, #icons:focus {
@@ -365,12 +342,6 @@ p {
     margin: 0px;
     height: auto;
     float: none;
-  }
-
-  .nav-tab {
-    margin: 0px;
-    display: block;
-    text-align: center;
   }
 
   #header-name {
@@ -441,7 +412,7 @@ p {
   }
 
   .nav-tab {
-    margin: 0px;
+    margin: auto;
     display: block;
     text-align: center;
   }

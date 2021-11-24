@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <!--Load Bootstrap-->
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/master.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
-<script src="master.js"></script>
+
 
 <html>
 
 <head>
 
   <meta charset="utf-8"/>
-  <meta name="description" content="Portfolio and Works by the Designer Neill Kaipo Shikada"></meta>
+  <meta name="description" content="Portfolio and Works by Neill Kaipo Shikada"></meta>
   <meta name="author" content="Neill Kaipo Shikada"></meta>
   <meta name="keywords" content="Design, Designer, Architecture, Painting, Portfolio, Art, Neill Kaipo Shikada, Shikada, Neill"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
@@ -20,7 +24,7 @@
   <title>NKS &#124; A Philly Based Designer</title>
   <link rel="icon" type="image/png" sizes="16x16" href="icon\icon_16x16.png">
 
-  <meta property="twitter:title" content="The Portfolio of Neill Kaipo Shikada - a designer with a background in architecture, with skills in painting, VR, model construction, and web development"></meta>
+  <meta property="twitter:title" content="The Portfolio of Neill Kaipo Shikada"></meta>
   <meta property="og:image" content="/library/site-thumbnail.jpg">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1024">
@@ -31,120 +35,94 @@
 
   <body class="mother">
 
-    <header>
-    
-      <!--element to open the sidenav-->
-      <div class="nav-parent">
-
-        <a href="https://neillshikada.com" tabindex="0" id="header-container">
-    
-          <img src="library/logo.png" id="header-logo">
-
-          <h1 id="header-name">neill kaipo shikada</h1>
-
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <a href="https://neillshikada.com" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img class="bi me-2" width="80" height="32" id="header-logo" src="library/logo.svg"></img>
+          <span class="fs-6" id="header-name">Neill Kaipo Shikada</span>
         </a>
-
-        <div id="navigation">
-          <a class="nav-tab" tabindex="1" href="https://neillshikada.com/portfolio">portfolio</a>
-          <a class="nav-tab" tabindex="2" href="https://neillshikada.com/resume">resume</a>
-          <a class="nav-tab" tabindex="3" href="https://neillshikada.com/about">about</a>
-        </div>
-
-
-      </div>
-
-    </header>
-
-    <div class="main">
-
-      <div class="column-side"></div>
-
-      <div class="index-txt">
-
-        <h1 class="type anim-typewriter">I'm an independent artist + designer.</h1>
-
-      </div>
-
-      <div class="slideshow-container">
-    
-        <div class="slide fade">
-          <img src="library/610/cypress-1.jpg" class="slide-img">
-          <div class="slide-txt">Portrait of a Cypress</div>
-          <div class="date">12 &#124; 20 &#124; 20</div>
-        </div>
-        
-        <div class="slide fade">
-          <img src="library/312/CRE-02.312.jpg" class="slide-img">
-          <div class="slide-txt">Processional Crematorium</div>
-          <div class="date">Spring &#124; 16</div>
-        </div>
-        
-        <div class="slide fade">
-          <img src="library/610/basilica.jpg" class="slide-img">
-          <div class="slide-txt">Basilica Palladiana</div>
-          <div class="date">12 &#124; 20 &#124; 20</div>
-        </div>
-
-        <div class="slide fade">
-          <img src="library/510a/510a-scrsht-1.png" class="slide-img">
-          <div class="slide-txt">LOMEX-R</div>
-          <div class="date">Fall &#124; 20</div>
-        </div>
-
-        <div class="slide fade">
-          <img src="library/610/creek.jpg" class="slide-img">
-          <div class="slide-txt">The Headwaters of the Everglades</div>
-          <div class="date">1 &#124; 6 &#124; 21</div>
-        </div>
-        
-        <div id="dot-container">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-          <span class="dot" onclick="currentSlide(4)"></span> 
-          <span class="dot" onclick="currentSlide(5)"></span> 
-        </div>
-
-        <div class="column-side"></div>
-
-        </div>
-        
-        <script>
-          var slideIndex = 0;
-          showSlides();
-          
-          function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("slide");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 2500); // Change image every 2 seconds
-          }
-
-        </script>
-
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6 active" aria-current="page">home</a></li>
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6">portfolio</a></li>
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6">resume</a></li>
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6">about</a></li>
+        </ul>
+      </header>
     </div>
 
-    <footer class="footer">
+    <div class="container">
 
-      <div class="footer-col" id="footer-left">
-        <a id="icons" tabindex="4" target="_blank" class="fab fa-instagram" href="https://www.instagram.com/kaipocraft/"><a>
-        <a id="icons" tabindex="5" target="_blank" class="fab fa-linkedin" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
-        <a id="icons" tabindex="6" target="_blank" class="fab fa-github" href="https://github.com/KaipoCraft"></a>
+      <div class="row mb-3">
+        
+        <div class="col-lg-8 themed-grid-col">
+          <h1 class="type anim-typewriter">I'm an independent artist + designer based in Boulder, CO.</h1>
+        </div>
+
+        <div class="col-lg-4 themed-grid-col">
+          <div class="slideshow-container">
+    
+            <div class="slide fade">
+              <img src="library/610/cypress-1.jpg" class="slide-img">
+              <div class="slide-txt">Portrait of a Cypress</div>
+              <div class="date">12 &#124; 20 &#124; 20</div>
+            </div>
+            
+            <div class="slide fade">
+              <img src="library/312/CRE-02.312.jpg" class="slide-img">
+              <div class="slide-txt">Processional Crematorium</div>
+              <div class="date">Spring &#124; 16</div>
+            </div>
+            
+            <div class="slide fade">
+              <img src="library/610/boulderFalls.jpg" class="slide-img">
+              <div class="slide-txt">Boulder Falls</div>
+              <div class="date">12 &#124; 20 &#124; 20</div>
+            </div>
+    
+            <div class="slide fade">
+              <img src="library/510a/510a-scrsht-1.png" class="slide-img">
+              <div class="slide-txt">LOMEX-R</div>
+              <div class="date">Fall &#124; 20</div>
+            </div>
+    
+            <div class="slide fade">
+              <img src="library/610/creek.jpg" class="slide-img">
+              <div class="slide-txt">The Headwaters of the Everglades</div>
+              <div class="date">1 &#124; 6 &#124; 21</div>
+            </div>
+            
+            <div id="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+          </div>
+
+          <script src="master.js"></script>
+
+        </div>
       </div>
-      <div class="footer-col" id="footer-center"></div>
-      <div class="footer-col" id="footer-right"></div>
+    </div>
 
-    </footer>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-0 my-5">
+          <ul class="nav col-md justify-content-start list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="fab fa-instagram" id="icons" tabindex="4" target="_blank" href="https://www.instagram.com/kaipocraft/"></a>  
+            </li>
+            <li class="ms-3">
+              <a class="fab fa-linkedin" id="icons" tabindex="5" target="_blank" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
+            </li>
+            <li class="ms-3">
+              <a class="fab fa-github" id="icons" tabindex="6" target="_blank" href="https://github.com/KaipoCraft"></a>
+            </li>
+          </ul>
+        </footer>
+    </div>
 
   </body>
 

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/master.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/resume.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
 <script src="master.js"></script>
@@ -31,55 +32,43 @@
 
   <body class="mother">
 
-    <header>
-    
-      <!--element to open the sidenav-->
-      <div class="nav-parent">
-
-        <a href="https://neillshikada.com" tabindex="0" id="header-container">
-    
-          <img src="library/logo.png" id="header-logo">
-
-          <h1 id="header-name">neill kaipo shikada</h1>
-
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <a href="https://neillshikada.com" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img class="bi me-2" width="80" height="32" id="header-logo" src="library/logo.svg"></img>
+          <span class="fs-6" id="header-name">Neill Kaipo Shikada</span>
         </a>
-
-        <div id="navigation">
-          <a class="nav-tab" tabindex="1" href="https://neillshikada.com/portfolio">portfolio</a>
-          <a class="nav-tab" tabindex="2" href="https://neillshikada.com/resume">resume</a>
-          <a class="nav-tab" tabindex="3" href="https://neillshikada.com/about">about</a>
-        </div>
-
-
-      </div>
-
-    </header>
-
-    <div class="main">
-
-        <div class="text-body">
-            <h1></h1>
-            <h2 class="resume-title"></h2>
-            <p class="resume-desc"></p>
-
-        </div>
-
-
-
-
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6" aria-current="page">home</a></li>
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6">portfolio</a></li>
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6 active">resume</a></li>
+          <li class="nav-item nav-tab"><a href="#" class="nav-link fs-6">about</a></li>
+        </ul>
+      </header>
     </div>
 
-    <footer class="footer">
-
-      <div class="footer-col" id="footer-left">
-        <a id="icons" tabindex="4" target="_blank" class="fab fa-instagram" href="https://www.instagram.com/kaipocraft/"><a>
-        <a id="icons" tabindex="5" target="_blank" class="fab fa-linkedin" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
-        <a id="icons" tabindex="6" target="_blank" class="fab fa-github" href="https://github.com/KaipoCraft"></a>
+    <main class="container">
+      <div class="body">
+        <iframe class="col-md-8" id="driveEmbed" src="https://docs.google.com/document/d/e/2PACX-1vTsVg4agt5aZKrFRDQHg6fGe_yi7DSN655n7G7zEKAD-iEGbCZq0g4fUIJSsnGhbf-OZnbEMDu2iUlF/pub?embedded=true"></iframe>
       </div>
-      <div class="footer-col" id="footer-center"></div>
-      <div class="footer-col" id="footer-right"></div>
+    </main>
 
-    </footer>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-0 my-5">
+        <ul class="nav col-md justify-content-start list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="fab fa-instagram" id="icons" tabindex="4" target="_blank" href="https://www.instagram.com/kaipocraft/"></a>  
+          </li>
+          <li class="ms-3">
+            <a class="fab fa-linkedin" id="icons" tabindex="5" target="_blank" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
+          </li>
+          <li class="ms-3">
+            <a class="fab fa-github" id="icons" tabindex="6" target="_blank" href="https://github.com/KaipoCraft"></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
   </body>
 
