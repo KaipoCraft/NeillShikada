@@ -20,7 +20,6 @@
 /* Slideshow */
 
 .slideshow-container {
-  min-width: 400px;
   height: 500px;
   position: relative;
   float: right;
