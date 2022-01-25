@@ -1,100 +1,3 @@
-/* 
-    Add grab cursor to the VR 3D images
-    
-    Change the font to all Lato
-    
-    Tags for projects
-    
-    Purpose statement
-    
-    Artist portfolio or tech employment?
-
-    WILL:
-    Add more mobile optimization
-    
-    Re-typed roles animation on the front page
-    
-    suggestions of a grid on the portfolio page
-    
-    Less typefaces
-    
-    Slideshow navigation centered underneath the slideshow
-    
-    slow down home page images  
-    
-    You’re fucking cool, Neill
-    
-    Tags for projects on hover
-
-
-    AMY:
-    Love the overall look and feel of your site
-    
-    Colors look great, the monochrome/greyscale of your portfolio page is really nice
-    
-    Front page: make the front gallery go slower, add an indicator that it’s an animated 
-    gallery (especially if it goes slower, might make it difficult to tell that it’s a gallery)
-    
-    Portfolio, there are two ways to flip through things.
-    
-    A bit confusing with the “previous project”, “next project”, as well as the arrows on the image carousel.
-    
-    A smaller carousel might help with this, where the project navigation is below or “encompasses” the images. 
-    Might make it more clear that the carousel is specific to the project.
-    
-    Also the gallery’s white space seems kind of random/the sizes of the images don’t seem to have a pattern?
-    
-    Overlay for your projects
-    
-    From a discovery point of view, it might be more beneficial to have all your descriptions and titles already 
-    on the images on your portfolio section but add color as you hover? — don’t make people guess what the project 
-    is/look for a description. People might not even hover over them (just scroll through instead)
-    
-    You might want to implement Skeleton or a responsive CSS framework similar to Skeleton
-    
-    It will help your page respond to computers with different page/window sizes
-    
-    My computer shows a portion of your page past the fold including the carousel dots/squares. 
-    Makes it harder to tell that it’s even a carousel. Your social link bubbles are also past the fold for me.
-    
-    Maybe just double check how your site looks on mobile?
-    
-    Carousel
-    
-    Nitpicky, but the carousel dots/square are a bit too far from the carousel itself
-    
-    Not 100% clear that they ARE carousel dots for the images above (principle of proximity)
-    
-    Could utilize opacity and make it closer?
-    
-    carousel arrows are hard to see on some images. you could move the arrows out of the images 
-    (put them next to the images instead?) This might help with the different sizes of images you have. 
-    for example on the LOM-X-R project, some images in that carousel are not as wide as others, the arrows touch the edges of the image
-    
-    Also, your page has some images throughout that are just as light, or almost as light as the background. 
-    A UX tip for this would be a drop shadow on the photos or images to show that it’s clickable (yay affordances)
-    
-    Too many fonts (feedback from the professors)
-    
-    I don’t think there are too many, I can see that the body text is similar to your name font but the title font throws me off
-    
-    The title font is super heavy weight which I can tell is by intent, but the letters are also super close together which 
-    makes it a bit distracting since all the other text has more spacing between letters.
-    
-    I’d like to see whatever problem you were trying to solve. It wasn’t very clear if these had a problem solving component, 
-    but if it did, I’d love to read about it.
-    
-    Possibly include medium that you used to create the project? Tools that you used?
-    
-    The slideshow at the beginning, the slight animation where the images shrink a tad bit is personally distracting. It would 
-    maybe be more beneficial for me if it just moved through the photos without the size animation
-    
-    Back to home?
-    
-    Maybe a way to get to home without clicking your name. People tend to automatically do what they usually do with other sites 
-    so a home section in your navigation would be easier for them to know how to get back.
-    */
-
 /* Colors */
 
 :root {
@@ -243,6 +146,11 @@ p {
   text-justify: inter-word;
   text-align: justify;
   display: inline-block;
+}
+
+em {
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 
