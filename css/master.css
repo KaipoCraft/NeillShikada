@@ -22,6 +22,10 @@ header {
   position: relative;
   height: auto;
 }
+
+article {
+  margin-bottom: 50px;
+}
     
 
 
