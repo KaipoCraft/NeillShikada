@@ -1,6 +1,6 @@
+import { handPoints } from './handPoints.js';
 const videoElement = document.getElementsByClassName('input_video')[0];
 const canvasElement = document.getElementsByClassName('output_canvas')[0];
-const canvasCtx = canvasElement.getContext('2d');
 let width = 1280;
 let height = 720;
 
@@ -14,14 +14,14 @@ let lifetime = 200;
 let frameRefresh = 1;
 
 
-function setup() {
+window.setup = function() {
     createCanvas(width, height);
 
     // Create sliders to adjust settings
-    thickSlider = createSlider(1, 100, 20, 10);
+    thickSlider = createSlider(1, 50, 5, 5);
     thickSlider.position(50, 500);
     thickSlider.style('width', '150px');
-    lifeSlider = createSlider(1, 200, 100, 20);
+    lifeSlider = createSlider(1, 200, 100, 10);
     lifeSlider.position(50, 550);
     lifeSlider.style('width', '150px');
     refreshSlider = createSlider(1, 10, 1, 1);
@@ -30,7 +30,7 @@ function setup() {
     
 }
 
-function draw() {
+window.draw = function() {
     background(220);
     
     push();
@@ -67,32 +67,8 @@ function draw() {
     }
 }
 
-class handPoints {
-    constructor(x, y, r, lifetime) {
-        this.v1 = createVector(x, y);
-        this.r = r;
-        this.lifetime = lifetime;
-    }
-
-    draw() {
-        push();
-        ellipse(this.v1.x, this.v1.y, this.r);
-        strokeWeight(1);
-        //line(this.v1.x, this.v1.y, this.v2.x, this.v2.y);
-        pop();
-    }
-
-    update() {
-        this.lifetime -= 5;
-    }
-
-    finished() {
-        return this.lifetime < 0;
-    }
-}
-
 // Mediapipe Stuff //
-function onResults(results) {
+window.onResults = function(results) {
     if (results.multiHandLandmarks) {
         for (const landmarks of results.multiHandLandmarks) {
             let c = color(250,250,250);
@@ -135,7 +111,6 @@ function onResults(results) {
             }
         }
     }
-    canvasCtx.restore();
 }
 
 function calculateDistance(v1, v2) {

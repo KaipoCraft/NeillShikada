@@ -65,7 +65,7 @@ hands.setOptions({
     minTrackingConfidence: 0.8
 });
 hands.onResults(onResults);
- 
+
 const camera = new Camera(videoElement, {
     onFrame: async () => {
         await hands.send({image: videoElement});

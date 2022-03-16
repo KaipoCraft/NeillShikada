@@ -3,11 +3,12 @@ const canvasElement = document.getElementsByClassName('output_canvas')[0];
 const canvasCtx = canvasElement.getContext('2d');
 let width = 1280;
 let height = 720;
-let arrayList = [];
-let currentHands;
+let palmList = [];
+let fingerList = [];
 
 // Mediapipe Stuff //
 function onResults(results) {
+    pointList = [];
     currentHands = null;
     canvasCtx.save();
     canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
@@ -23,6 +24,23 @@ function onResults(results) {
             drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS,
                         {color: '#FFFFFF', lineWidth: 5});
             drawLandmarks(canvasCtx, landmarks, {color: '#FFFFFF', lineWidth: 2});
+            //pointList.push(landmarks);
+            var palm = [0,1,5,9,13,17];
+
+            for (i = 0; i < landmarks.length; i++) {
+              var isPalm = palm.indexOf(j);
+              var next;
+              var v = ["Landmark " + [i], landmarks[i].x*100, landmarks[i].y*100, landmarks[i].z*100];
+              if (isPalm == -1) {
+                fingerList.push(v + "    ");
+                  //next = landmarks[j-1];
+              } else {
+                palmList.push(v + "    ");
+                  //next = landmarks[palm[(isPalm+1)%palm.length]];
+              }
+            }
+            //pointList = landmarks.x;
+            print(landmarks);
         }
     }
     canvasCtx.restore();
@@ -50,28 +68,34 @@ camera.start();
 
 function setup() {
     createCanvas(width, height);
-    i = 0;
 }
 
 function draw() {
-    background(220, 0.75);
     
-    // I want it to print the results only when a new one has been added to the array
-    // if length of list > print length then print again
-    // if list is in an object, add to list and print in the same function
-
-    if (frameCount % 20 == 0) {
-        if (currentHands != null) {
-            for (h = 0; h < currentHands.length; h++) {
-                print(currentHands[h]);
-                for (p = 0; p < currentHands[h].length; p++) {
-                    x = currentHands[h][p].x*width;
-                    y = currentHands[h][p].y*height;
-                    ellipse(x, y, 15);
-                }
-            }
-        }
-    }
 }
 
-//export let myList = arrayList;
+(function () {
+    var textFile = null,
+      makeTextFile = function (text) {
+        var data = new Blob([text], {type: 'text/plain'});
+    
+        // If we are replacing a previously generated file we need to
+        // manually revoke the object URL to avoid memory leaks.
+        if (textFile !== null) {
+          window.URL.revokeObjectURL(textFile);
+        }
+    
+        textFile = window.URL.createObjectURL(data);
+    
+        return textFile;
+      };
+    
+    
+      var create = document.getElementById('create');
+    
+      create.addEventListener('click', function () {
+        var link = document.getElementById('downloadlink');
+        link.href = makeTextFile(pointList);
+        link.style.display = 'block';
+      }, false);
+    })();
