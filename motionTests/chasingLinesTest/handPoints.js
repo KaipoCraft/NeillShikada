@@ -1,4 +1,4 @@
-export default class handPoints {
+export class handPoints {
     constructor(x, y, r, lifetime) {
         this.v1 = createVector(x, y);
         this.r = r;

@@ -12,6 +12,7 @@ let r;
 let lifetime = 200;
 // The amount of frames it takes to set a new point
 let frameRefresh = 1;
+let thickSlider, lifeSlider, refreshSlider;
 
 
 window.setup = function() {
@@ -54,11 +55,15 @@ window.draw = function() {
     }
 
     for (let i = pointList.length - 1; i >= 0; i--) {
-        if (pointList[i+1] != null) {
+        if (pointList[i+3] != null) {
             print(pointList[i].v1.x, pointList[i+1].v1.x);
             push();
             strokeWeight(thickSlider.value());
-            line(pointList[i].v1.x, pointList[i].v1.y, pointList[i+1].v1.x, pointList[i+1].v1.y);
+            bezier(
+                pointList[i].v1.x, pointList[i].v1.y, 
+                pointList[i+1].v1.x, pointList[i+1].v1.y,
+                pointList[i+2].v1.x, pointList[i+2].v1.y,
+                pointList[i+3].v1.x, pointList[i+3].v1.y);
             pop();
         }
         if (pointList[i].finished()) {
@@ -106,7 +111,7 @@ window.onResults = function(results) {
 
             
             if (frameCount % frameRefresh == 0) {
-                p1 = createVector(landmarks[8].x*width, landmarks[8].y*height);
+                let p1 = createVector(landmarks[8].x*width, landmarks[8].y*height);
                 pointList.push(new handPoints(p1.x, p1.y, r, lifetime));
             }
         }

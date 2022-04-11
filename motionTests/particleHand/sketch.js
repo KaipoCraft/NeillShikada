@@ -6,6 +6,7 @@ let angle = 0;
 let particles = [];
 let height = 720;
 let width = 1280;
+let fr;
 
 // --------------------------- Setup the Canvas to Draw --------------------------------------- //
 function setup() {
@@ -16,6 +17,7 @@ function setup() {
         
 function onResults(results) {
 
+    fr = print(floor(frameRate()));
     background(250, 200, 200);
 
     if (results.multiHandLandmarks) {

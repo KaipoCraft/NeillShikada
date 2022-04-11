@@ -28,7 +28,7 @@ function onResults(results) {
             var palm = [0,1,5,9,13,17];
 
             for (i = 0; i < landmarks.length; i++) {
-              var isPalm = palm.indexOf(j);
+              var isPalm = palm.indexOf(i);
               var next;
               var v = ["Landmark " + [i], landmarks[i].x*100, landmarks[i].y*100, landmarks[i].z*100];
               if (isPalm == -1) {
