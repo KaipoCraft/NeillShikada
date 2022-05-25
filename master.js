@@ -36,5 +36,3 @@ function outFunc() {
   var tooltip = document.getElementById("copyMessage");
   tooltip.innerHTML = "Copy to clipboard";
 }
-
-//document.getElementById("mynavigator").style.width = "25%";
