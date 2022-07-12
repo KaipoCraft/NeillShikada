@@ -1,3 +1,7 @@
+:root {
+    --imageBorder: 10px;
+}
+
 /* fade in on load */
 
 .card img {
@@ -76,7 +80,7 @@
 .arch-card:hover .arch-img{
     width: calc(100% - 6px);
     height: calc(100% - 6px);
-    border: solid 3px var(--nksWhite);
+    border: solid var(--imageBorder) var(--nksWhite);
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
@@ -113,7 +117,7 @@
     height: auto;
     transition: .3s ease;
     background-color: rgba(242,242,242,0.8);
-    border: solid var(--nksBlack) 2px;
+    border: solid var(--nksBlack) var(--imageBorder);
     width: 100%;
 }
 
