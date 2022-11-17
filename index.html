@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <!--Load Bootstrap-->
-<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
--->
+<!--Load Bootstrap-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--Main css style sheet-->
 <link rel="stylesheet" type="text/css" href="css/master.css">
+<!--Stylesheet specific to the index page-->
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<!--Stylesheet for the social media icons-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<!--Imports the Lato font-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap">
-
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
 
 <html>
+  <head>
+    <!--Meta information for external sites to read (i.e. search engines)-->
+    <meta charset="utf-8"/>
+    <meta name="description" content="Portfolio and Works by Neill Kaipo Shikada"></meta>
+    <meta name="author" content="Neill Kaipo Shikada"></meta>
+    <meta name="keywords" content="Design, Designer, Architecture, Painting, Portfolio, Art, Neill Kaipo Shikada, Shikada, Neill"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
-<head>
+    <!--Name and image that appears in the tab-->
+    <title>Neill Shikada &#124; Design+Tech</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="library/logoSQ.svg">
 
-  <meta charset="utf-8"/>
-  <meta name="description" content="Portfolio and Works by Neill Kaipo Shikada"></meta>
-  <meta name="author" content="Neill Kaipo Shikada"></meta>
-  <meta name="keywords" content="Design, Designer, Architecture, Painting, Portfolio, Art, Neill Kaipo Shikada, Shikada, Neill"></meta>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <!--Meta information for external sites to read (i.e. search engines)-->
+    <meta property="twitter:title" content="The Portfolio of Neill Kaipo Shikada"></meta>
+    <meta property="og:image" content="./library">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+  </head>
 
-  <title>NKS &#124; Art and Design</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="icon\icon_16x16.png">
-
-  <meta property="twitter:title" content="The Portfolio of Neill Kaipo Shikada"></meta>
-  <meta property="og:image" content="/library/site-thumbnail.jpg">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
-
-
-</head>
-
-  <body class="mother">
-
+  <body>
+    <!--Site Name and Navbar header-->
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
         <a href="https://neillshikada.com" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -51,79 +52,28 @@
       </header>
     </div>
 
-    <div class="container">
+    <!--Body of the page-->
+    <div class="container-sm body-text">
 
-      <div class="row mb-3">
-        
-        <div class="col-lg-8 themed-grid-col">
-          <h1 class="type anim-typewriter">I'm an independent artist + designer based in Boulder, CO.</h1>
-        </div>
+      <!-- Concept: Have an alternative option where you can use the webcam to navigate my website? -->
 
-        <div class="col-lg-4 themed-grid-col">
-          <div class="slideshow-container">
-    
-            <div class="slide fade">
-              <img src="library/610/cypress-1.jpg" class="slide-img">
-              <div class="slide-txt">Portrait of a Cypress</div>
-              <div class="date">12 &#124; 20 &#124; 20</div>
-            </div>
-            
-            <div class="slide fade">
-              <img src="library/312/CRE-02.312.jpg" class="slide-img">
-              <div class="slide-txt">Processional Crematorium</div>
-              <div class="date">Spring &#124; 16</div>
-            </div>
-            
-            <div class="slide fade">
-              <img src="library/610/boulderFalls.jpg" class="slide-img">
-              <div class="slide-txt">Boulder Falls</div>
-              <div class="date">12 &#124; 20 &#124; 20</div>
-            </div>
-    
-            <div class="slide fade">
-              <img src="library/510a/510a-scrsht-1.png" class="slide-img">
-              <div class="slide-txt">LOMEX-R</div>
-              <div class="date">Fall &#124; 20</div>
-            </div>
-    
-            <div class="slide fade">
-              <img src="library/610/creek.jpg" class="slide-img">
-              <div class="slide-txt">The Headwaters of the Everglades</div>
-              <div class="date">1 &#124; 6 &#124; 21</div>
-            </div>
-            
-            <div id="dot-container">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-              <span class="dot" onclick="currentSlide(4)"></span> 
-              <span class="dot" onclick="currentSlide(5)"></span> 
-            </div>
-          </div>
-
-          <script src="master.js"></script>
-
-        </div>
-      </div>
+      <p>Neill</p>
+      
     </div>
 
-
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-0 my-5">
-          <ul class="nav col-md justify-content-start list-unstyled d-flex">
-            <li class="ms-3">
-              <a class="fab fa-instagram" id="icons" tabindex="4" target="_blank" href="https://www.instagram.com/kaipocraft/"></a>  
-            </li>
-            <li class="ms-3">
-              <a class="fab fa-linkedin" id="icons" tabindex="5" target="_blank" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
-            </li>
-            <li class="ms-3">
-              <a class="fab fa-github" id="icons" tabindex="6" target="_blank" href="https://github.com/KaipoCraft"></a>
-            </li>
-          </ul>
-        </footer>
-    </div>
-
+    <!--Footer with social links-->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-0 my-5 container-sm">
+      <ul class="nav col-md justify-content-start list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="fab fa-instagram" id="icons" tabindex="4" target="_blank" href="https://www.instagram.com/kaipocraft/"></a>  
+        </li>
+        <li class="ms-3">
+          <a class="fab fa-linkedin" id="icons" tabindex="5" target="_blank" href="https://www.linkedin.com/in/neill-shikada-6700a2166/"></a>
+        </li>
+        <li class="ms-3">
+          <a class="fab fa-github" id="icons" tabindex="6" target="_blank" href="https://github.com/KaipoCraft"></a>
+        </li>
+      </ul>
+    </footer>
   </body>
-
 </html>

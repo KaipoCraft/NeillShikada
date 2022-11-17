@@ -3905,7 +3905,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: var(--nksAccent);
+  color: var(--nksWhite);
 }
 
 .nav-tabs {
@@ -3940,7 +3940,8 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: var(--nksAccent);
+  color: var(--nksWhite);
+  background-color: var(--nksAccent);
   border: solid 2px var(--nksAccent);
 }
 
@@ -7550,6 +7551,10 @@ textarea.form-control-lg {
 
 .fs-6 {
   font-size: 1rem !important;
+}
+
+.fs-6 {
+  font-size: 0.75rem !important;
 }
 
 .fst-italic {

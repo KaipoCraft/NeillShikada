@@ -1,19 +1,28 @@
-/* Colors */
+/*--------------------------------------*/  
+/*----------------Colors----------------*/
+/*--------------------------------------*/ 
 
 :root {
   --nksAccent: #e184ce;
-  --nksWhite: #dddddd;
+  --nksAccentLight: rgba(225, 132, 206, 0.5);
+  --nksWhite: #fbf9f7;
   --nksBlack: #151515;
   --nksGray: #858585;
 }
 
-/*Main Layout*/
+/*--------------------------------------*/  
+/*-------------Main Layout--------------*/
+/*--------------------------------------*/ 
 
-.mother {
+body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
   background-color: var(--nksWhite);
+}
+
+.body-text {
+  background-color: var(--nksBlack);
 }
 
 header {
@@ -27,9 +36,9 @@ article {
   margin-bottom: 50px;
 }
     
-
-
-/*Navigator*/
+/*--------------------------------------*/  
+/*----------Navigation style------------*/
+/*--------------------------------------*/
 
 .nav-parent {
   width: 100%;
@@ -47,8 +56,6 @@ article {
     cursor: pointer;
   }
 
-  
-
 #navigation {
   float: right;
   height: 40px;
@@ -56,38 +63,39 @@ article {
 }
 
 #header-name {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: 'Lora', Helvetica, sans-serif;
   transition: 0.3s;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 40px;
   color: var(--nksBlack);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   text-decoration: none;
   margin-left: 10px;
 }
 
 .nav-tab {
   text-decoration: none;
+  text-align: center;
   transition: 0.3s;
   font-family: 'Lato', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   margin-left: 10px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
   .nav-tab:hover, .nav-tab:focus {
-    color: var(--nksAccent);
+    color: var(--nksWhite);
+    background-color: var(--nksAccentLight);
   }
 
 #header-logo {
   height: 44px;
   display: inline-block;
   transition: 0.3s;
-  border: solid 2px var(--nksBlack);
 }
 
 .navigator {
@@ -103,17 +111,15 @@ article {
   white-space: nowrap;
 }
 
-
-
-/*Body*/
-
-
+/*--------------------------------------*/  
+/*----------------Body------------------*/
+/*--------------------------------------*/ 
 
 h1 {
   font-family: 'Lato', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--nksBlack);
@@ -183,11 +189,9 @@ em {
   color: var(--nksBlack);
 }
 
-
-
-/*Footer*/
-
-
+/*--------------------------------------*/  
+/*----------------Footer----------------*/
+/*--------------------------------------*/ 
 
 .footer {
   font-family: 'Lato', Helvetica, sans-serif;
@@ -229,151 +233,4 @@ em {
 #footer-left {
   float: left;
   text-align: left;
-}
-
-/* Mobile Optimization (side phone / tablet) */
-
-@media only screen and (max-width: 1050px) {
-
-  .main {
-    margin-bottom: 50px;
-  }
-
-  header {
-    height: 150px;
-    padding: 20px 0 0 0;
-    text-align: center;
-  }
-
-  .nav-parent {
-    position: relative;
-    margin: auto;
-  }
-  
-  #navigation {
-    margin: 0px;
-    height: auto;
-    float: none;
-  }
-
-  #header-name {
-    display: block;
-    margin: auto;
-    text-align: center;
-    position: relative;
-  }
-
-  #header-container {
-    margin: auto;
-    position: relative;
-    display: block;
-  }
-
-  .footer {
-    height: 200px;
-    padding: 0px;
-    bottom: 20px;
-    position: relative;
-  }
-
-  #footer-left {
-    float: none;
-    text-align: center;
-    bottom: 40px;
-    position: absolute;
-    width: 100%;
-  }
-
-  .footer-col {
-    float: none;
-    width: auto;
-  }
-
-  #footer-center {
-    display: none;
-  }
-
-  #footer-right {
-    display: none;
-  }
-}
-
-/* Mobile Optimization */
-
-@media only screen and (max-width: 600px) {
-
-  .mother {
-    width: auto;
-  }
-
-  header {
-    height: 150px;
-    padding: 20px 0 0 0;
-    text-align: center;
-  }
-
-  .nav-parent {
-    position: relative;
-    margin: auto;
-  }
-  
-  #navigation {
-    margin: 0px;
-    height: auto;
-    float: none;
-  }
-
-  .nav-tab {
-    margin: auto;
-    display: block;
-    text-align: center;
-  }
-
-  #header-name {
-    display: block;
-    margin: auto;
-    text-align: center;
-    position: relative;
-  }
-
-  #header-container {
-    margin: auto;
-    position: relative;
-    display: block;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  
-  
-  .footer {
-    height: 100px;
-    padding: 0px;
-    bottom: 20px;
-    position: relative;
-  }
-
-  #footer-left {
-    float: none;
-    text-align: center;
-    bottom: 40px;
-    position: absolute;
-    width: 100%;
-  }
-
-  .footer-col {
-    float: none;
-    width: auto;
-  }
-
-  #footer-center {
-    display: none;
-  }
-
-  #footer-right {
-    display: none;
-  }
-
 }
